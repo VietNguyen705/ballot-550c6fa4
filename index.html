@@ -34,7 +34,6 @@ a { color: var(--accent); }
 main { max-width: 720px; margin: 0 auto; padding: 8px 16px 64px; }
 h1 { font-size: 2rem; margin: 24px 0 4px; }
 .sub { color: var(--soft); margin: 0 0 16px; }
-.note { border-left: 4px solid var(--accent); padding: 4px 0 4px 14px; margin: 16px 0; }
 nav ol { padding-left: 1.4em; }
 nav li { margin: 6px 0; }
 h2 { font-size: 1.6rem; margin: 56px 0 8px; padding-top: 12px; border-top: 3px solid var(--ink); }
@@ -84,7 +83,6 @@ footer { color: var(--soft); font-size: 0.85rem; margin-top: 48px; border-top: 1
 const UI = {
   title: ["Milpitas Ballot Guide", "Hướng dẫn lá phiếu Milpitas"],
   date: ["General election, Tuesday, November 3, 2026. Researched September 29, 2026.", "Bầu cử tổng quát, Thứ Ba, ngày 3 tháng 11 năm 2026. Thông tin cập nhật ngày 29/9/2026."],
-  notOfficial: ["A personal guide made for family, not an official voter guide. Check it against your official Santa Clara County sample ballot.", "Đây là tài liệu tự soạn cho gia đình đọc, không phải hướng dẫn chính thức. Hãy đối chiếu với lá phiếu mẫu chính thức của Quận Santa Clara."],
   contents: ["On this page", "Trong trang này"],
   top10: ["The 10 most important votes", "10 lá phiếu quan trọng nhất"],
   top10lead: ["Marked with a yellow label below.", "Được đánh dấu bằng nhãn vàng ở bên dưới."],
@@ -460,9 +458,7 @@ function render() {
   document.getElementById("en").setAttribute("aria-pressed", lang === "en");
   document.documentElement.style.fontSize = size + "px";
   document.getElementById("app").innerHTML = `
-  <h1>${t(UI.title)}</h1><p class="sub">${t(UI.date)}</p>
-  <p class="note">${t(UI.notOfficial)}</p>
-  <nav aria-label="${t(UI.contents)}"><b>${t(UI.contents)}</b><ol>
+  <h1>${t(UI.title)}</h1><p class="sub">${t(UI.date)}</p>  <nav aria-label="${t(UI.contents)}"><b>${t(UI.contents)}</b><ol>
     <li><a href="#top10">${t(UI.top10)}</a></li><li><a href="#how">${t(UI.how)}</a></li>
     <li><a href="#races">${t(UI.races)}</a></li><li><a href="#props">${t(UI.props)}</a></li>
     <li><a href="#local">${t(UI.local)}</a></li><li><a href="#notes">${t(UI.notes)}</a></li></ol></nav>
