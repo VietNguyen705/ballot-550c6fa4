@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lá phiếu Milpitas 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfaf7; --ink: #1b1b1b; --soft: #4a4a4a; --rule: #d9d6cf;
+  --accent: #23395d; --mark: #fff1a8; --yes: #1f6b3a; --no: #9b2c2c;
+  --dem: #1f4fa3; --rep: #b3261e; --band: #f1efe9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16171a; --ink: #f0eee9; --soft: #c2bfb8; --rule: #3a3b40;
+    --accent: #9db6e0; --mark: #5a4d12; --yes: #7fd19b; --no: #f19a9a;
+    --dem: #8fb1f0; --rep: #f39a93; --band: #22242a;
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Be Vietnam Pro", system-ui, sans-serif; line-height: 1.65; }
+h1, h2, h3 { font-family: "Noto Serif", Georgia, serif; line-height: 1.3; }
+a { color: var(--accent); }
+.bar { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--rule); }
+.bar-in { max-width: 720px; margin: 0 auto; padding: 8px 16px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.bar button { font: inherit; font-size: 0.9rem; font-weight: 600; min-height: 44px; padding: 0 14px; border: 2px solid var(--accent); background: transparent; color: var(--accent); border-radius: 6px; cursor: pointer; }
+.bar button[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+.bar .sp { flex: 1; }
+main { max-width: 720px; margin: 0 auto; padding: 8px 16px 64px; }
+h1 { font-size: 2rem; margin: 24px 0 4px; }
+.sub { color: var(--soft); margin: 0 0 16px; }
+.note { border-left: 4px solid var(--accent); padding: 4px 0 4px 14px; margin: 16px 0; }
+nav ol { padding-left: 1.4em; }
+nav li { margin: 6px 0; }
+h2 { font-size: 1.6rem; margin: 56px 0 8px; padding-top: 12px; border-top: 3px solid var(--ink); }
+h3 { font-size: 1.3rem; margin: 0 0 4px; }
+section > p.lead { color: var(--soft); margin-top: 0; }
+.item { border-top: 1px solid var(--rule); padding: 28px 0 8px; scroll-margin-top: 72px; }
+.star { display: inline-block; background: var(--mark); color: var(--ink); font-size: 0.8rem; font-weight: 700; padding: 1px 8px; margin-bottom: 6px; }
+.lvl { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--soft); font-weight: 600; }
+.does { margin: 4px 0 10px; }
+.guess { font-size: 0.95rem; color: var(--soft); }
+.guess b { color: var(--ink); }
+details { margin: 8px 0; }
+summary { cursor: pointer; color: var(--accent); font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+details p { margin: 4px 0 12px; }
+.cand { border-left: 3px solid var(--rule); padding: 2px 0 2px 14px; margin: 18px 0; }
+.cand .nm { font-size: 1.15rem; font-weight: 700; }
+.pty { font-size: 0.85rem; font-weight: 600; margin-left: 6px; }
+.pty.D { color: var(--dem); } .pty.R { color: var(--rep); } .pty.N { color: var(--soft); }
+.cand.D { border-left-color: var(--dem); } .cand.R { border-left-color: var(--rep); }
+.cand p { margin: 4px 0; }
+.k { font-weight: 600; }
+.prop { display: grid; grid-template-columns: 3.2rem 1fr; column-gap: 12px; }
+.num { font-family: "Noto Serif", Georgia, serif; font-size: 2.2rem; font-weight: 700; line-height: 1; color: var(--accent); padding-top: 4px; }
+.yn { margin: 12px 0; }
+.yn p { margin: 6px 0; padding-left: 12px; border-left: 4px solid; }
+.yn .y { border-color: var(--yes); } .yn .n { border-color: var(--no); }
+.yn b.y { color: var(--yes); } .yn b.n { color: var(--no); }
+.grid2 { display: grid; gap: 4px 0; }
+.howto dt { font-weight: 700; margin-top: 12px; }
+.howto dd { margin: 2px 0 0; }
+footer { color: var(--soft); font-size: 0.85rem; margin-top: 48px; border-top: 1px solid var(--rule); padding-top: 12px; }
+@media (max-width: 480px) { .prop { grid-template-columns: 1fr; } .num { font-size: 1.8rem; margin-bottom: 6px; } h1 { font-size: 1.7rem; } }
+@media print { .bar { display: none; } h2 { break-before: page; } }
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-in">
+  <button id="vi" aria-pressed="true" lang="vi">Tiếng Việt</button>
+  <button id="en" aria-pressed="false" lang="en">English</button>
+  <span class="sp"></span>
+  <button id="dn" aria-label="Chữ nhỏ hơn">A−</button>
+  <button id="up" aria-label="Chữ lớn hơn">A+</button>
+</div></div>
+<main id="app"></main>
+<noscript><p style="padding:16px">Vui lòng bật JavaScript. / Please enable JavaScript.</p></noscript>
+<script>
+const UI = {
+  title: ["Milpitas Ballot Guide", "Hướng dẫn lá phiếu Milpitas"],
+  date: ["General election, Tuesday, November 3, 2026. Researched September 29, 2026.", "Bầu cử tổng quát, Thứ Ba, ngày 3 tháng 11 năm 2026. Thông tin cập nhật ngày 29/9/2026."],
+  notOfficial: ["A personal guide made for family, not an official voter guide. Check it against your official Santa Clara County sample ballot.", "Đây là tài liệu tự soạn cho gia đình đọc, không phải hướng dẫn chính thức. Hãy đối chiếu với lá phiếu mẫu chính thức của Quận Santa Clara."],
+  contents: ["On this page", "Trong trang này"],
+  top10: ["The 10 most important votes", "10 lá phiếu quan trọng nhất"],
+  top10lead: ["Marked with a yellow label below.", "Được đánh dấu bằng nhãn vàng ở bên dưới."],
+  how: ["How it works", "Cách bầu cử"],
+  races: ["Candidate races", "Bầu ứng cử viên"],
+  racesLead: ["15 races: US House, 9 statewide offices, State Senate, State Assembly, school board, mayor, city council.", "15 cuộc bầu: Hạ viện Hoa Kỳ, 9 chức vụ toàn tiểu bang, Thượng viện và Hạ viện Tiểu bang, hội đồng học khu, thị trưởng, hội đồng thành phố."],
+  props: ["Statewide propositions", "Dự luật toàn tiểu bang"],
+  propsLead: ["14 propositions (Props 1 to 5 and 37 to 45). Everyone in California votes on these. A YES vote means you want the change; NO keeps things as they are.", "14 dự luật (số 1 đến 5 và 37 đến 45). Mọi cử tri California đều bầu các dự luật này. Bầu CÓ nghĩa là muốn thay đổi; bầu KHÔNG nghĩa là giữ nguyên như hiện nay."],
+  local: ["Local measures", "Dự luật địa phương"],
+  localLead: ["Only voters in Milpitas (Measure K) or the five-county Bay Area region (Measure RTM) vote on these.", "Chỉ cử tri ở Milpitas (Dự luật K) hoặc ở năm quận vùng Vịnh (Dự luật RTM) mới bầu các dự luật này."],
+  notes: ["Notes", "Ghi chú"],
+  star: ["★ Important vote", "★ Lá phiếu quan trọng"],
+  does: ["What the office does: ", "Chức vụ này làm gì: "],
+  guess: ["Likely outcome (a guess, not a result): ", "Dự đoán (chỉ là dự đoán, không phải kết quả): "],
+  why: ["Why this guess?", "Vì sao dự đoán như vậy?"],
+  bg: ["Background: ", "Lý lịch: "],
+  st: ["Stands for: ", "Lập trường: "],
+  whatDoes: ["What it does: ", "Dự luật này làm gì: "],
+  yes: ["YES", "CÓ"], no: ["NO", "KHÔNG"], means: [" means: ", " nghĩa là: "],
+  who: ["Who supports and opposes it", "Ai ủng hộ, ai phản đối"],
+  sup: ["Supports: ", "Ủng hộ: "], opp: ["Opposes: ", "Phản đối: "],
+  src: ["Source", "Nguồn"],
+  prop: ["Prop", "Dự luật"],
+  nf: ["Not found", "Không tìm thấy thông tin"],
+  foot: ["Made from a personal research spreadsheet. Sources: CalMatters 2026 Voter Guide, Santa Clara County Registrar of Voters, City of Milpitas, Milpitas Beat, KQED.", "Soạn từ bảng tổng hợp cá nhân. Nguồn: CalMatters, Văn phòng Ghi danh Cử tri Quận Santa Clara, Thành phố Milpitas, Milpitas Beat, KQED."]
+};
+const TAG = { Safe: ["Safe", "Gần như chắc chắn"], Likely: ["Likely", "Nhiều khả năng"], Lean: ["Lean", "Hơi nghiêng"], Toss: ["Toss-up", "Khó đoán"] };
+const PARTY = { D: ["Democratic", "Dân Chủ"], R: ["Republican", "Cộng Hòa"], N: ["Nonpartisan", "Không đảng phái"] };
+const REG = { D: [" (registered Democrat)", " (đăng ký Dân Chủ)"], R: [" (registered Republican)", " (đăng ký Cộng Hòa)"] };
+
+const TOP = [
+  ["gov", ["Governor", "Thống đốc"], ["Biggest office on the ballot. Decides how California handles housing, taxes, and fights with Trump.", "Chức vụ lớn nhất trên lá phiếu. Quyết định cách California xử lý nhà ở, thuế, và các tranh chấp với Trump."]],
+  ["mayor", ["Milpitas Mayor", "Thị trưởng Milpitas"], ["A toss-up. Montano beat Lien by only 3 points in 2024.", "Khó đoán. Năm 2024 Montano thắng Lien chỉ hơn 3 điểm."]],
+  ["council", ["Milpitas City Council", "Hội đồng Thành phố Milpitas"], ["Two seats, five candidates, no clear favorite. Local races are where one vote counts the most.", "Hai ghế, năm ứng cử viên, chưa ai dẫn rõ ràng. Bầu cử địa phương là nơi mỗi lá phiếu có sức nặng nhất."]],
+  ["mK", ["Measure K", "Dự luật K"], ["Changes how every Milpitas business is taxed. Pays for ambulance service, streets, and blight cleanup.", "Thay đổi cách đánh thuế mọi doanh nghiệp ở Milpitas. Tiền dùng cho xe cứu thương, đường sá, và dọn dẹp các khu xuống cấp."]],
+  ["mRTM", ["Measure RTM", "Dự luật RTM"], ["Raises the sales tax in Milpitas by half a cent to keep BART and VTA running. Milpitas has its own BART station.", "Tăng thuế bán hàng ở Milpitas thêm nửa xu (0,5%) để duy trì BART và VTA. Milpitas có trạm BART riêng."]],
+  ["p40", ["Prop 40", "Dự luật 40"], ["Billionaire tax. A toss-up, and a big deal in Silicon Valley, where many billionaires live.", "Thuế tỷ phú. Khó đoán, và là chuyện lớn ở Silicon Valley, nơi có nhiều tỷ phú."]],
+  ["p42", ["Prop 42", "Dự luật 42"], ["Would block wealth taxes like Prop 40. If both pass, they conflict.", "Sẽ chặn các loại thuế tài sản như Dự luật 40. Nếu cả hai cùng thông qua thì sẽ mâu thuẫn nhau."]],
+  ["p3", ["Prop 3", "Dự luật 3"], ["High-income tax. Affects many Bay Area tech workers.", "Thuế thu nhập cao. Ảnh hưởng nhiều người làm ngành công nghệ ở vùng Vịnh."]],
+  ["p39", ["Prop 39", "Dự luật 39"], ["Voter ID. One of the most debated props this year.", "Xuất trình thẻ căn cước khi đi bầu. Một trong những dự luật gây tranh cãi nhất năm nay."]],
+  ["p45", ["Prop 45", "Dự luật 45"], ["Faster environmental review for building. A toss-up that shapes how fast housing gets built.", "Xét duyệt môi trường nhanh hơn khi xây dựng. Khó đoán, và ảnh hưởng đến tốc độ xây nhà."]]
+];
+
+const HOW = [
+  [["Who can vote", "Ai được bầu"], ["US citizens 18 or older who are registered in California. Register by Oct 19 online, or same day at a vote center.", "Công dân Mỹ từ 18 tuổi trở lên đã ghi danh cử tri ở California. Ghi danh trực tuyến trước ngày 19/10, hoặc ghi danh ngay trong ngày tại trung tâm bỏ phiếu."]],
+  [["Top-two system", "Hệ thống hai người dẫn đầu"], ["In partisan races the top two finishers from the June primary advance, no matter their party.", "Trong các cuộc bầu có đảng phái, hai người về nhất và nhì ở vòng sơ bộ tháng 6 sẽ vào vòng này, dù thuộc đảng nào."]],
+  [["How to vote", "Cách bỏ phiếu"], ["Every registered voter gets a mail ballot. Return it by mail (postmarked by Nov 3), at a drop box, or vote in person.", "Mọi cử tri đã ghi danh đều nhận lá phiếu qua bưu điện. Gửi lại qua bưu điện (đóng dấu bưu điện trễ nhất ngày 3/11), bỏ vào thùng phiếu, hoặc đi bầu trực tiếp."]],
+  [["Where the most weight is", "Lá phiếu nào có sức nặng nhất"], ["Local races (mayor, council, school board, Measure K) have the fewest voters, so each vote counts the most.", "Các cuộc bầu địa phương (thị trưởng, hội đồng thành phố, hội đồng học khu, Dự luật K) có ít người bầu nhất, nên mỗi lá phiếu có sức nặng nhất."]]
+];
+
+const NOTES = [
+  [["Not on this ballot", "Không có trên lá phiếu này"], ["No US Senate race in California this year. No Santa Clara County office races on the Milpitas ballot. Judicial retention votes are not covered here.", "Năm nay California không bầu Thượng nghị sĩ liên bang. Lá phiếu Milpitas không có chức vụ cấp quận. Phần bỏ phiếu giữ chức thẩm phán không có trong hướng dẫn này."]],
+  [["Likely outcomes", "Về các dự đoán"], ["Based on polls, June primary results, past local results and endorsements as of Sept 29, 2026. These are best guesses, not results. Toss-up means it could go either way.", "Dựa trên thăm dò, kết quả sơ bộ tháng 6, kết quả địa phương trước đây và các lời ủng hộ tính đến 29/9/2026. Đây chỉ là dự đoán, không phải kết quả. Khó đoán nghĩa là bên nào cũng có thể thắng."]],
+  [["Missing info", "Thiếu thông tin"], ["No public positions were found for the four school board candidates or for council candidate Jennie Ha Phan.", "Không tìm thấy lập trường công khai của bốn ứng cử viên hội đồng học khu và của ứng cử viên hội đồng thành phố Jennie Ha Phan."]]
+];
+
+const CM = "https://calmatters.org/california-voter-guide-2026/";
+const MILP = "https://www.milpitas.gov/DocumentCenter/View/10552/List-of-Qualified-Candidates-2026-PDF";
+const MILC = "https://www.milpitas.gov/DocumentCenter/View/10562/Ballot-Designation-and-Candidate-Statement-Review-2026-PDF";
+
+const RACES = [
+{ id: "house", lvl: ["Federal", "Liên bang"], office: ["U.S. House, District 17", "Hạ viện Hoa Kỳ, Khu vực 17"],
+  does: ["Represents the district in Congress and votes on federal laws and spending.", "Đại diện khu vực tại Quốc hội, bỏ phiếu về luật và chi tiêu liên bang."],
+  out: ["Khanna likely wins", "Khanna nhiều khả năng thắng"], tag: "Safe",
+  why: ["Incumbent Khanna got about 59% in the June primary to Tandon's about 17%, in a solidly Democratic district.", "Khanna (đương nhiệm) được khoảng 59% ở vòng sơ bộ tháng 6, so với khoảng 17% của Tandon, trong một khu vực nghiêng hẳn về Đảng Dân Chủ."],
+  src: "https://americanbazaaronline.com/2026/06/03/khanna-advances-as-tandon-surprises-in-primary-482107/",
+  c: [
+  { n: "Ro Khanna", p: "D", bg: ["Incumbent congressman since 2017; progressive, lives in Fremont. Got about 59% in the June primary.", "Dân biểu liên bang đương nhiệm từ năm 2017; cấp tiến, sống ở Fremont. Được khoảng 59% ở vòng sơ bộ tháng 6."], st: ["Took on billionaires and backed a billionaire tax; says big money should not beat voters; progressive stances on the economy.", "Đối đầu với giới tỷ phú và ủng hộ thuế tỷ phú; cho rằng tiền của giới giàu không được lấn át cử tri; lập trường kinh tế cấp tiến."] },
+  { n: "Ritesh Tandon", p: "R", bg: ["Tech executive and entrepreneur in the Bay Area for 26+ years; Santa Clara University MBA; fourth run for this seat.", "Giám đốc điều hành và doanh nhân ngành công nghệ ở vùng Vịnh hơn 26 năm; có bằng MBA Đại học Santa Clara; lần thứ tư tranh ghế này."], st: ["Lower cost of living (housing, health care, education); lower taxes, less red tape, AI education in schools; stronger border security while keeping legal paths for immigrants.", "Giảm chi phí sinh hoạt (nhà ở, y tế, giáo dục); giảm thuế, bớt thủ tục, dạy AI trong trường học; siết an ninh biên giới nhưng vẫn giữ con đường nhập cư hợp pháp."] }
+  ] },
+{ id: "gov", key: true, lvl: ["State", "Tiểu bang"], office: ["Governor", "Thống đốc"],
+  does: ["Runs the state government, signs or vetoes laws, and writes the state budget.", "Điều hành chính quyền tiểu bang, ký hoặc phủ quyết luật, và soạn ngân sách tiểu bang."],
+  out: ["Becerra likely wins", "Becerra nhiều khả năng thắng"], tag: "Safe",
+  why: ["Becerra leads Hilton in every fall poll: PPIC 60% to 38% (Sept 4-10), Berkeley IGS 58% to 33% (Sept 15-20), SurveyUSA 55% to 33% (Sept 15-20); Cook and Sabato rate it Solid/Safe Democratic.", "Becerra dẫn Hilton trong mọi cuộc thăm dò mùa thu: PPIC 60% so với 38% (4-10/9), Berkeley IGS 58% so với 33% (15-20/9), SurveyUSA 55% so với 33% (15-20/9). Cook và Sabato đều xếp là chắc chắn cho Đảng Dân Chủ."],
+  src: CM + "governor/",
+  c: [
+  { n: "Xavier Becerra", p: "D", bg: ["Former U.S. Health and Human Services secretary under Biden, former California attorney general, longtime congressman from Los Angeles.", "Cựu Bộ trưởng Y tế và Dịch vụ Nhân sinh thời Biden, cựu Tổng chưởng lý California, nhiều năm làm dân biểu liên bang ở Los Angeles."], st: ["Declare a state of emergency to freeze utility and insurance rates and fund 40,000 already-approved affordable homes; keep suing Trump like he did 100+ times as attorney general; supports extending the high-earner income tax for schools but opposes the Prop 40 billionaire tax.", "Ban bố tình trạng khẩn cấp để đóng băng giá điện nước và giá bảo hiểm, và cấp tiền xây 40.000 căn nhà giá phải chăng đã được duyệt; tiếp tục kiện Trump như đã làm hơn 100 lần khi còn là tổng chưởng lý; ủng hộ gia hạn thuế thu nhập cao để có tiền cho trường học nhưng phản đối thuế tỷ phú (Dự luật 40)."] },
+  { n: "Steve Hilton", p: "R", bg: ["Former Fox News host and former adviser to UK Prime Minister David Cameron; endorsed by President Trump.", "Cựu người dẫn chương trình Fox News và cựu cố vấn của Thủ tướng Anh David Cameron; được Tổng thống Trump ủng hộ."], st: ["No state income tax on the first $150,000 earned and a flat rate above that, and cut the gas tax in half; roll back climate rules and loosen building rules to bring back starter homes; end the sanctuary law and state Medi-Cal for undocumented immigrants.", "Miễn thuế thu nhập tiểu bang cho 150.000 đô đầu tiên và áp một mức thuế chung cho phần trên đó, giảm một nửa thuế xăng; nới các quy định về khí hậu và xây dựng để có lại nhà giá vừa phải cho người mua lần đầu; bỏ luật bảo vệ di dân (luật trú ẩn) và bỏ Medi-Cal của tiểu bang cho người không có giấy tờ."] }
+  ] },
+{ id: "ltgov", lvl: ["State", "Tiểu bang"], office: ["Lieutenant Governor", "Phó Thống đốc"],
+  does: ["Takes over if the governor is absent, breaks tie votes in the state Senate, and sits on university boards.", "Thay thế khi thống đốc vắng mặt, bỏ phiếu quyết định khi Thượng viện tiểu bang hòa phiếu, và ngồi trong hội đồng quản trị các trường đại học."],
+  out: ["Ma likely wins", "Ma nhiều khả năng thắng"], tag: "Likely",
+  why: ["No general election poll found, but Democrats together took about 61% of the June primary vote to about 37% for Republicans; Ma led the primary with 19.1% to Romero's 17.8%.", "Chưa có thăm dò cho vòng này. Ở vòng sơ bộ tháng 6, các ứng cử viên Dân Chủ cộng lại được khoảng 61%, Cộng Hòa khoảng 37%. Ma dẫn đầu với 19,1% so với 17,8% của Romero."],
+  src: CM + "lieutenant-governor/",
+  c: [
+  { n: "Fiona Ma", p: "D", bg: ["State treasurer since 2019; former Board of Equalization member, assemblymember, and San Francisco supervisor.", "Thủ quỹ tiểu bang từ năm 2019; từng là thành viên Hội đồng Thuế vụ (Board of Equalization), dân biểu tiểu bang, và giám sát viên San Francisco."], st: ["Runs on long experience in state finance; backed by the California Labor Federation and building trades unions.", "Dựa vào nhiều năm kinh nghiệm về tài chính tiểu bang; được Liên đoàn Lao động California và các nghiệp đoàn xây dựng ủng hộ."] },
+  { n: "Gloria Romero", p: "R", bg: ["Former Democratic state Senate majority leader who became a Republican in 2024; political ally of Steve Hilton.", "Cựu lãnh đạo khối đa số Thượng viện tiểu bang thuộc Đảng Dân Chủ, chuyển sang Đảng Cộng Hòa năm 2024; đồng minh chính trị của Steve Hilton."], st: ["School choice; opposed Democrats on COVID-19 policies and gender identity issues.", "Cho phụ huynh tự chọn trường cho con; từng chống Đảng Dân Chủ về chính sách COVID-19 và vấn đề bản dạng giới."] }
+  ] },
+{ id: "ag", lvl: ["State", "Tiểu bang"], office: ["Attorney General", "Tổng Chưởng lý"],
+  does: ["The state's top lawyer and law enforcement officer; enforces state laws and sues on the state's behalf.", "Luật sư hàng đầu và người đứng đầu ngành thực thi pháp luật của tiểu bang; thi hành luật tiểu bang và đứng ra kiện thay mặt tiểu bang."],
+  out: ["Bonta likely wins", "Bonta nhiều khả năng thắng"], tag: "Safe",
+  why: ["Incumbent Bonta beat Gates 56.6% to 37.9% in the June primary.", "Bonta (đương nhiệm) thắng Gates 56,6% so với 37,9% ở vòng sơ bộ tháng 6."],
+  src: CM + "attorney-general/",
+  c: [
+  { n: "Rob Bonta", p: "D", bg: ["Attorney general since 2021; former East Bay assemblymember.", "Tổng chưởng lý từ năm 2021; cựu dân biểu tiểu bang vùng East Bay."], st: ["Enforce state housing laws on cities that refuse to build; keep suing the Trump administration (50+ lawsuits so far); enforce criminal justice laws passed in the early 2020s.", "Buộc các thành phố không chịu xây nhà phải tuân thủ luật nhà ở tiểu bang; tiếp tục kiện chính quyền Trump (hơn 50 vụ đến nay); thi hành các luật tư pháp hình sự ban hành đầu thập niên 2020."] },
+  { n: "Michael E. Gates", p: "R", bg: ["Huntington Beach city attorney for about a decade; briefly a deputy assistant attorney general in Trump's Justice Department in 2025.", "Luật sư thành phố Huntington Beach khoảng 10 năm; năm 2025 làm một thời gian ngắn ở Bộ Tư pháp thời Trump (phó trợ lý tổng chưởng lý)."], st: ["Pushes back on what he sees as soft-on-crime state policy; fought state housing mandates on cities; endorsed by the California Rifle & Pistol Association and California Parents Union.", "Phản đối những chính sách tiểu bang mà Gates cho là nương tay với tội phạm; từng chống việc tiểu bang bắt buộc các thành phố xây nhà; được California Rifle &amp; Pistol Association và California Parents Union ủng hộ."] }
+  ] },
+{ id: "sos", lvl: ["State", "Tiểu bang"], office: ["Secretary of State", "Tổng Thư ký Tiểu bang"],
+  does: ["Runs state elections, certifies ballot measures, and handles business filings and lobbying records.", "Tổ chức bầu cử tiểu bang, xác nhận các dự luật được lên lá phiếu, và quản lý hồ sơ doanh nghiệp và vận động hành lang."],
+  out: ["Weber likely wins", "Weber nhiều khả năng thắng"], tag: "Safe",
+  why: ["Incumbent Weber beat Wagner 58.7% to 36.7% in the June primary.", "Weber (đương nhiệm) thắng Wagner 58,7% so với 36,7% ở vòng sơ bộ tháng 6."],
+  src: CM + "secretary-of-state/",
+  c: [
+  { n: "Shirley N. Weber", p: "D", bg: ["Secretary of state since 2021, first Black person in the job; former assemblymember.", "Tổng thư ký tiểu bang từ năm 2021, người da đen đầu tiên giữ chức này; cựu dân biểu tiểu bang."], st: ["Expand voting access; make election and campaign filings more open; improve election cybersecurity.", "Mở rộng quyền đi bầu; công khai hơn hồ sơ bầu cử và tài chính tranh cử; tăng cường an ninh mạng cho bầu cử."] },
+  { n: "Don Wagner", p: "R", bg: ["Orange County supervisor, former Irvine mayor and assemblymember.", "Giám sát viên Quận Cam (Orange County), cựu thị trưởng Irvine và cựu dân biểu tiểu bang."], st: ["Require voter ID at the polls; faster ballot counting; pushed to share voter data with the Trump Justice Department.", "Bắt buộc xuất trình thẻ căn cước khi đi bầu; đếm phiếu nhanh hơn; từng đòi chia sẻ dữ liệu cử tri với Bộ Tư pháp thời Trump."] }
+  ] },
+{ id: "treas", lvl: ["State", "Tiểu bang"], office: ["Treasurer", "Thủ quỹ Tiểu bang"],
+  does: ["The state's banker; invests state money and manages state borrowing.", "Người giữ tiền của tiểu bang; đầu tư tiền của tiểu bang và quản lý các khoản vay."],
+  out: ["Kounalakis likely wins", "Kounalakis nhiều khả năng thắng"], tag: "Safe",
+  why: ["Kounalakis led with 36.7% to Hawks's 24.0% in June, and Democratic candidates together got about 60% to about 37% for Republicans.", "Kounalakis dẫn đầu với 36,7% so với 24,0% của Hawks vào tháng 6. Các ứng cử viên Dân Chủ cộng lại được khoảng 60%, Cộng Hòa khoảng 37%."],
+  src: CM + "treasurer/",
+  c: [
+  { n: "Eleni Kounalakis", p: "D", bg: ["Lieutenant governor since 2019; former U.S. ambassador to Hungary.", "Phó thống đốc từ năm 2019; cựu đại sứ Mỹ tại Hungary."], st: ["Points to her votes against tuition hikes on the UC and CSU boards; backed by the California Labor Federation and Teamsters.", "Nêu việc đã bỏ phiếu chống tăng học phí trong hội đồng quản trị UC và CSU; được Liên đoàn Lao động California và nghiệp đoàn Teamsters ủng hộ."] },
+  { n: "Jennifer Hawks", p: "R", bg: ["Retired Silicon Valley businesswoman, most recently an executive at Sacred Heart Schools in Atherton; never held office.", "Nữ doanh nhân Silicon Valley đã nghỉ hưu, gần nhất làm giám đốc điều hành ở trường Sacred Heart tại Atherton; chưa từng giữ chức vụ dân cử."], st: ["Says her business background and independence from Sacramento would bring accountability to state finances.", "Cho rằng kinh nghiệm kinh doanh và việc không phụ thuộc giới chính trị Sacramento sẽ giúp tài chính tiểu bang có trách nhiệm hơn."] }
+  ] },
+{ id: "ctrl", lvl: ["State", "Tiểu bang"], office: ["Controller", "Kiểm soát viên Tiểu bang"],
+  does: ["The state's chief accountant; audits state spending and pays state workers.", "Kế toán trưởng của tiểu bang; kiểm tra chi tiêu và trả lương cho nhân viên tiểu bang."],
+  out: ["Cohen likely wins", "Cohen nhiều khả năng thắng"], tag: "Safe",
+  why: ["Incumbent Cohen beat Morgan 56.8% to 37.5% in the June primary.", "Cohen (đương nhiệm) thắng Morgan 56,8% so với 37,5% ở vòng sơ bộ tháng 6."],
+  src: CM + "controller/",
+  c: [
+  { n: "Malia M. Cohen", p: "D", bg: ["State controller since 2023.", "Kiểm soát viên tiểu bang từ năm 2023."], st: ["Run state finances with transparency and fairness; urged lawmakers to spend with caution in the latest budget.", "Quản lý tài chính tiểu bang minh bạch và công bằng; khuyên các nhà lập pháp chi tiêu thận trọng trong ngân sách vừa qua."] },
+  { n: "Herb W. Morgan", p: "R", bg: ["Founder of a San Diego investment firm later bought by Cantor Fitzgerald; its chief investment officer.", "Người sáng lập một công ty đầu tư ở San Diego (sau được Cantor Fitzgerald mua lại) và là giám đốc đầu tư của công ty này."], st: ["Find and expose fraud and waste in state government.", "Tìm và phanh phui gian lận, lãng phí trong chính quyền tiểu bang."] }
+  ] },
+{ id: "ins", lvl: ["State", "Tiểu bang"], office: ["Insurance Commissioner", "Ủy viên Bảo hiểm"],
+  does: ["Regulates insurance companies, including home and car insurance rates and claims.", "Giám sát các công ty bảo hiểm, kể cả giá bảo hiểm nhà, xe và việc bồi thường."],
+  out: ["Toss-up", "Khó đoán"], tag: "Toss",
+  why: ["Both are Democrats and no poll has been found; Kim led the primary 27.4% to Allen's 19.4%, but Allen has the state Democratic Party, both U.S. senators, and a $1 million-backed outside PAC, and the roughly 37% of voters who backed Republicans in June are up for grabs.", "Cả hai đều thuộc Đảng Dân Chủ và chưa có thăm dò. Kim dẫn vòng sơ bộ 27,4% so với 19,4% của Allen. Nhưng Allen được Đảng Dân Chủ tiểu bang, cả hai thượng nghị sĩ liên bang, và một nhóm vận động bên ngoài có 1 triệu đô ủng hộ. Khoảng 37% cử tri bầu Cộng Hòa hồi tháng 6 chưa rõ sẽ chọn ai."],
+  src: CM + "insurance-commissioner/",
+  c: [
+  { n: "Ben Allen", p: "D", bg: ["State senator since 2014 from the Los Angeles area; wrote the Prop 4 climate bond and the single-use plastics law.", "Thượng nghị sĩ tiểu bang từ năm 2014, vùng Los Angeles; soạn dự luật trái phiếu khí hậu (Dự luật 4) và luật về đồ nhựa dùng một lần."], st: ["Hire more staff for consumer complaints and add a consumer advocate; make insurers report claim delays and explain denials after disasters; more oversight of the FAIR Plan and less building in high fire risk areas.", "Tuyển thêm người xử lý khiếu nại và thêm một người đại diện cho người tiêu dùng; buộc hãng bảo hiểm báo cáo việc chậm bồi thường và giải thích lý do từ chối sau thiên tai; giám sát chặt hơn chương trình FAIR Plan và hạn chế xây dựng ở vùng dễ cháy."] },
+  { n: "Jane Kim", p: "D", bg: ["Former San Francisco supervisor and former head of the California Working Families Party; consumer advocate and attorney.", "Cựu giám sát viên San Francisco, cựu lãnh đạo California Working Families Party; luật sư bảo vệ quyền lợi người tiêu dùng."], st: ["Create state-run natural disaster insurance for everyone; open the low-cost auto insurance program to all drivers; freeze rates when someone files a claim and penalize insurers who delay.", "Lập chương trình bảo hiểm thiên tai do tiểu bang điều hành cho mọi người; mở chương trình bảo hiểm xe giá rẻ cho mọi tài xế; không cho tăng giá khi khách hàng nộp yêu cầu bồi thường, và phạt hãng bảo hiểm chậm trễ."] }
+  ] },
+{ id: "spi", lvl: ["State", "Tiểu bang"], office: ["Superintendent of Public Instruction (nonpartisan)", "Tổng Giám đốc Giáo dục Công lập (không đảng phái)"],
+  does: ["Elected head of public schools statewide; many duties move to a governor-appointed commissioner starting 2027, but it stays a statewide voice on schools.", "Người đứng đầu hệ thống trường công toàn tiểu bang do dân bầu. Từ năm 2027 nhiều nhiệm vụ sẽ chuyển cho một ủy viên do thống đốc bổ nhiệm, nhưng chức vụ này vẫn là tiếng nói chung về giáo dục của tiểu bang."],
+  out: ["Barrera likely wins", "Barrera nhiều khả năng thắng"], tag: "Likely",
+  why: ["Shaw led the crowded primary 22.6% to 20.3%, but most of the other 45%+ went to Democratic-leaning candidates, Barrera has the teachers union, and a Republican-aligned candidate lost this race about 63% to 37% in 2022; no fall poll found.", "Shaw dẫn vòng sơ bộ đông người với 22,6% so với 20,3%. Nhưng phần lớn hơn 45% phiếu còn lại về tay các ứng cử viên nghiêng về Dân Chủ, Barrera được nghiệp đoàn giáo viên ủng hộ, và năm 2022 một ứng cử viên thân Cộng Hòa đã thua cuộc bầu này khoảng 63% so với 37%. Chưa có thăm dò mùa thu."],
+  src: CM + "superintendent-of-public-instruction/",
+  c: [
+  { n: "Richard Barrera", p: "N", reg: "D", bg: ["President of the San Diego Unified school board.", "Chủ tịch hội đồng giáo dục Học khu San Diego Unified."], st: ["More school funding; early childhood education; make it easier to become a teacher. Endorsed by the California Teachers Association.", "Tăng ngân sách cho trường học; giáo dục mầm non; giúp việc trở thành giáo viên dễ hơn. Được Hiệp hội Giáo viên California ủng hộ."] },
+  { n: "Sonja Shaw", p: "N", reg: "R", bg: ["President of the Chino Valley Unified school board.", "Chủ tịch hội đồng giáo dục Học khu Chino Valley Unified."], st: ["Opposes transgender student protections; wants to move away from what she calls radical ideologies and back to academic basics. Endorsed by the California Republican Party and Moms for Liberty.", "Phản đối các chính sách bảo vệ học sinh chuyển giới; muốn bỏ những gì Shaw gọi là tư tưởng cực đoan để quay về kiến thức học thuật cơ bản. Được Đảng Cộng Hòa California và Moms for Liberty ủng hộ."] }
+  ] },
+{ id: "boe", lvl: ["State", "Tiểu bang"], office: ["State Board of Equalization, District 2", "Hội đồng Thuế vụ Tiểu bang (Board of Equalization), Khu vực 2"],
+  does: ["Tax board that advises county assessors, values utility and railroad property, and hears some tax appeals.", "Hội đồng thuế: hướng dẫn các văn phòng định giá thuế cấp quận, định giá tài sản của các công ty điện nước và đường sắt, và xét một số khiếu nại về thuế."],
+  out: ["Lieber likely wins", "Lieber nhiều khả năng thắng"], tag: "Safe",
+  why: ["Incumbent Lieber won an outright majority (55.0%) in the June primary, with Pimentel around 15%.", "Lieber (đương nhiệm) được hơn nửa số phiếu (55,0%) ngay ở vòng sơ bộ tháng 6, Pimentel khoảng 15%."],
+  src: "https://www.almanacnews.com/election/2026/05/14/should-the-states-tax-commission-even-exist/",
+  c: [
+  { n: "Sally J. Lieber", p: "D", bg: ["Incumbent board member since 2022, from Mountain View; former assemblymember.", "Thành viên hội đồng từ năm 2022, sống ở Mountain View; cựu dân biểu tiểu bang."], st: ["Keep the board as a place that helps people with tax problems; help nonprofits learn about tax exemptions. Endorsed by the state Democratic Party.", "Giữ hội đồng là nơi giúp người dân gặp rắc rối về thuế; giúp các tổ chức bất vụ lợi hiểu về miễn thuế. Được Đảng Dân Chủ tiểu bang ủng hộ."] },
+  { n: "John Pimentel", p: "D", bg: ["Trustee on the San Mateo County Community College District board, from Menlo Park.", "Ủy viên hội đồng quản trị Học khu Đại học Cộng đồng Quận San Mateo, sống ở Menlo Park."], st: ["Simplify or even abolish the board and move its work elsewhere; calls it a well-paid landing spot for retired legislators. Backed by Fiona Ma and San Jose Mayor Matt Mahan.", "Đơn giản hóa hoặc thậm chí giải tán hội đồng này và chuyển công việc sang nơi khác; gọi đây là chỗ ngồi lương cao cho các nhà lập pháp về hưu. Được Fiona Ma và Thị trưởng San Jose Matt Mahan ủng hộ."] }
+  ] },
+{ id: "sd10", lvl: ["State", "Tiểu bang"], office: ["State Senate, District 10", "Thượng viện Tiểu bang, Khu vực 10"],
+  does: ["Writes and votes on state laws and the state budget for a district covering Milpitas, Fremont, Hayward, Santa Clara and Sunnyvale.", "Soạn và bỏ phiếu về luật và ngân sách tiểu bang, đại diện khu vực gồm Milpitas, Fremont, Hayward, Santa Clara và Sunnyvale."],
+  out: ["Sakakihara likely wins", "Sakakihara nhiều khả năng thắng"], tag: "Safe",
+  why: ["Sakakihara led the primary with 29.1% to Price's 23.2%, and Democrats together took about 77% of the vote.", "Sakakihara dẫn vòng sơ bộ với 29,1% so với 23,2% của Price, và các ứng cử viên Dân Chủ cộng lại được khoảng 77%."],
+  src: "https://en.wikipedia.org/wiki/2026_California_State_Senate_election",
+  c: [
+  { n: "Scott Sakakihara", p: "D", bg: ["Union City vice mayor, attorney, and U.S. Navy reserve intelligence officer; worked in the Obama White House. Came first in the June primary (29%).", "Phó thị trưởng Union City, luật sư, và sĩ quan tình báo trừ bị Hải quân Mỹ; từng làm việc tại Tòa Bạch Ốc thời Obama. Về nhất ở vòng sơ bộ tháng 6 (29%)."], st: ["Make everyday life more affordable; strengthen the safety net; more housing and help for homeless residents and renters.", "Giúp cuộc sống hằng ngày bớt đắt đỏ; củng cố mạng lưới an sinh; thêm nhà ở, giúp người vô gia cư và người thuê nhà."] },
+  { n: "Linda R. Price", p: "R", bg: ["Former HR director, business consultant, and longtime leadership instructor at Bay Area colleges; not a career politician. Came second (23%).", "Cựu giám đốc nhân sự, cố vấn doanh nghiệp, nhiều năm dạy kỹ năng lãnh đạo ở các trường cao đẳng vùng Vịnh; không phải chính trị gia chuyên nghiệp. Về nhì (23%)."], st: ["Safe neighborhoods, good schools, affordable housing, and an accountable government; bring common sense and listen across party lines. Endorsed by the California Republican Party.", "Khu phố an toàn, trường học tốt, nhà ở vừa túi tiền, chính quyền có trách nhiệm; làm việc theo lẽ thường và lắng nghe cả hai đảng. Được Đảng Cộng Hòa California ủng hộ."] }
+  ] },
+{ id: "ad24", lvl: ["State", "Tiểu bang"], office: ["State Assembly, District 24", "Hạ viện Tiểu bang, Khu vực 24"],
+  does: ["Writes and votes on state laws and the state budget for a district covering Milpitas, Fremont, Newark and part of North San Jose.", "Soạn và bỏ phiếu về luật và ngân sách tiểu bang, đại diện khu vực gồm Milpitas, Fremont, Newark và một phần Bắc San Jose."],
+  out: ["Lee likely wins", "Lee nhiều khả năng thắng"], tag: "Safe",
+  why: ["Incumbent Lee got about 65% in the June primary in a strongly Democratic district.", "Lee (đương nhiệm) được khoảng 65% ở vòng sơ bộ tháng 6, trong một khu vực nghiêng hẳn về Dân Chủ."],
+  src: "https://milpitasbeat.com/assembly-district-24-candidate-max-hsia-seeks-to-break-democratic-stronghold/",
+  c: [
+  { n: "Alex Lee", p: "D", bg: ["Incumbent assemblymember since 2020. Got about 65% in the June primary.", "Dân biểu tiểu bang từ năm 2020. Được khoảng 65% ở vòng sơ bộ tháng 6."], st: ["Affordable housing and education funding; more transit and universal health care; limit special interest influence.", "Nhà ở vừa túi tiền và ngân sách giáo dục; thêm giao thông công cộng và bảo hiểm y tế cho mọi người; hạn chế ảnh hưởng của các nhóm lợi ích."] },
+  { n: "Max Hsia", p: "R", bg: ["Berryessa (San Jose) resident, former food and retail business owner, now semi-retired.", "Sống ở Berryessa (San Jose), từng làm chủ tiệm ăn và cửa hàng bán lẻ, nay đã bán nghỉ hưu."], st: ["Push back on tax increases; enforce felony charges for theft and drug crimes and fully fund Prop 36; common-sense fixes to government waste.", "Chống tăng thuế; truy tố trọng tội đối với trộm cắp và ma túy, và cấp đủ tiền cho Dự luật 36; sửa sự lãng phí của chính quyền theo lẽ thường."] }
+  ] },
+{ id: "musd", lvl: ["School district", "Học khu"], office: ["Milpitas Unified School District Board (vote for 3)", "Hội đồng Giáo dục Học khu Milpitas (chọn 3 người)"],
+  does: ["Sets policy, budget, and leadership for Milpitas public schools.", "Đặt chính sách, ngân sách và chọn lãnh đạo cho các trường công ở Milpitas."],
+  out: ["Norwood and Yip-Chuan likely keep their seats; third seat unclear between Sankaran and Lacanlale", "Norwood và Yip-Chuan nhiều khả năng giữ ghế; ghế thứ ba chưa rõ giữa Sankaran và Lacanlale"], tag: "Lean",
+  why: ["The two incumbents finished first and second in 2022 (Yip-Chuan about 29%, Norwood about 28%) and Yip-Chuan has the county Democratic Party endorsement; with 4 candidates for 3 seats, one newcomer wins, and there is no real signal on which.", "Hai người đương nhiệm về nhất và nhì năm 2022 (Yip-Chuan khoảng 29%, Norwood khoảng 28%), và Yip-Chuan được Đảng Dân Chủ quận ủng hộ. Có 4 ứng cử viên cho 3 ghế nên chắc chắn một người mới sẽ thắng, nhưng chưa rõ là ai."],
+  src: "https://localnewsmatters.org/santa-clara-november-3-2026/",
+  c: [
+  { n: "Chris Norwood", p: "N", bg: ["Incumbent board member since 2014, 2026 board president, Milpitas High alum; 2020 state school board member of the year.", "Thành viên hội đồng từ năm 2014, chủ tịch hội đồng năm 2026, cựu học sinh Milpitas High; thành viên hội đồng giáo dục xuất sắc nhất tiểu bang năm 2020."] },
+  { n: "Kelly Yip-Chuan", p: "N", bg: ["Incumbent board member since 2018; past board president. Council candidate Bill Chuan says his wife is on the MUSD board, so likely his spouse.", "Thành viên hội đồng từ năm 2018; từng làm chủ tịch hội đồng. Ứng cử viên hội đồng thành phố Bill Chuan nói vợ mình ở trong hội đồng học khu, nên có lẽ đây là vợ của Bill Chuan."] },
+  { n: "Anuradha Sankaran", p: "N", bg: ["Engineer and parent.", "Kỹ sư và phụ huynh."] },
+  { n: "Franchesca Lacanlale", p: "N", bg: ["Nonprofit director.", "Giám đốc một tổ chức bất vụ lợi."] }
+  ] },
+{ id: "mayor", key: true, lvl: ["City", "Thành phố"], office: ["Milpitas Mayor (2-year term ending 2028)", "Thị trưởng Milpitas (nhiệm kỳ 2 năm, đến 2028)"],
+  does: ["Leads City Council meetings and votes on city policy, budget, and planning.", "Chủ trì các buổi họp Hội đồng Thành phố và bỏ phiếu về chính sách, ngân sách và quy hoạch của thành phố."],
+  out: ["Toss-up between Montano and Lien, slight edge Montano", "Khó đoán giữa Montano và Lien, Montano hơi nhỉnh hơn"], tag: "Toss",
+  why: ["No polls; in 2024 Montano beat Lien only 35.8% to 32.5%, and the third-place progressive (Anthony Phan, 22.3%) is not running, so his voters likely decide it; Lien is Republican-endorsed in a Democratic city, while Montano finished 5th (9.5%) in her June state Senate run.", "Không có thăm dò. Năm 2024 Montano chỉ thắng Lien 35,8% so với 32,5%. Người về thứ ba theo khuynh hướng cấp tiến (Anthony Phan, 22,3%) không ra tranh cử lần này, nên cử tri của Phan có thể sẽ quyết định kết quả. Lien được Đảng Cộng Hòa ủng hộ trong một thành phố nghiêng về Dân Chủ, còn Montano về thứ 5 (9,5%) khi tranh ghế Thượng viện tiểu bang hồi tháng 6."],
+  src: MILP,
+  c: [
+  { n: "Carmen Montano", p: "N", reg: "D", bg: ["Mayor since 2020 (two terms), educator, lifelong Milpitas resident; former school board member and councilmember. She ran for State Senate District 10 in June but finished 5th with 9.5%, so she is not in that race in November.", "Thị trưởng từ năm 2020 (hai nhiệm kỳ), nhà giáo, sống ở Milpitas cả đời; từng ở hội đồng học khu và hội đồng thành phố. Tháng 6 ra tranh ghế Thượng viện Tiểu bang Khu vực 10 nhưng về thứ 5 với 9,5%, nên không có tên trong cuộc bầu đó vào tháng 11."], st: ["Safer neighborhoods and emergency readiness; says she cut the city's structural deficit 45% without cutting jobs or services; affordable housing and bringing in new businesses.", "Khu phố an toàn hơn và sẵn sàng cho tình huống khẩn cấp; cho biết đã giảm 45% thâm hụt ngân sách lâu dài của thành phố mà không cắt việc làm hay dịch vụ; nhà ở vừa túi tiền và thu hút doanh nghiệp mới."] },
+  { n: "Hon Lien", p: "N", bg: ["City councilmember since 2022; former school board member and planning commissioner; lost the 2024 mayor race to Montano.", "Ủy viên hội đồng thành phố từ năm 2022; từng ở hội đồng học khu và ủy ban quy hoạch; thua Montano trong cuộc bầu thị trưởng năm 2024."], st: ["Stronger police, traffic enforcement, and a parking enforcement unit; speed up development and permits to bring in business; end council turmoil (10 top executives left in 5 years) and let staff run day-to-day operations.", "Tăng cường cảnh sát, kiểm soát giao thông, và lập đơn vị kiểm soát đậu xe; đẩy nhanh việc xây dựng và cấp giấy phép để thu hút doanh nghiệp; chấm dứt lục đục trong hội đồng (10 lãnh đạo cấp cao đã nghỉ việc trong 5 năm) và để nhân viên thành phố lo việc hằng ngày."] },
+  { n: "Santosh Sahoo", p: "N", bg: ["Tech entrepreneur running a small software company; 20+ years at Microsoft and IBM; first run for office; no ballot statement filed.", "Doanh nhân công nghệ, điều hành một công ty phần mềm nhỏ; hơn 20 năm làm ở Microsoft và IBM; lần đầu ra tranh cử; không nộp bản tuyên bố ứng cử."], st: ["Line-by-line budget reform; control staff costs and protect core services; fresh leadership at City Hall.", "Xem xét lại ngân sách từng mục một; kiểm soát chi phí nhân sự và bảo vệ các dịch vụ thiết yếu; mang lại lãnh đạo mới cho Tòa Thị chính."] },
+  { n: "Voltaire S. Montemayor", p: "N", bg: ["Retired geologist, frequent public commenter at council meetings; sixth run for mayor.", "Nhà địa chất đã nghỉ hưu, thường phát biểu ý kiến tại các buổi họp hội đồng; lần thứ sáu tranh chức thị trưởng."], st: ["Earthquake and disaster readiness; help small businesses and attract big retailers; freeze on home prices and rents.", "Sẵn sàng cho động đất và thiên tai; giúp doanh nghiệp nhỏ và thu hút các nhà bán lẻ lớn; đóng băng giá nhà và giá thuê."] }
+  ] },
+{ id: "council", key: true, lvl: ["City", "Thành phố"], office: ["Milpitas City Council (2 seats, 4-year terms)", "Hội đồng Thành phố Milpitas (2 ghế, nhiệm kỳ 4 năm)"],
+  does: ["Votes on city laws, the budget, land use, and city services.", "Bỏ phiếu về luật thành phố, ngân sách, sử dụng đất và các dịch vụ của thành phố."],
+  out: ["Chuan and Barbadillo slightly favored, Kanani close behind", "Chuan và Barbadillo hơi có ưu thế, Kanani bám sát phía sau"], tag: "Lean",
+  why: ["No polls; Barbadillo is the incumbent (2nd in 2022 with about 21%), Chuan just missed a seat in 2024 (17.1%, 3rd), and the county Democratic Party endorsed Chuan and Kanani; Awasthi got 9.5% in 2024 but now has the mayor and two councilmembers behind him.", "Không có thăm dò. Barbadillo là người đương nhiệm (về nhì năm 2022 với khoảng 21%). Chuan suýt có ghế năm 2024 (17,1%, hạng 3). Đảng Dân Chủ quận ủng hộ Chuan và Kanani. Awasthi được 9,5% năm 2024 nhưng nay có thị trưởng và hai ủy viên hội đồng ủng hộ."],
+  src: MILC,
+  c: [
+  { n: "Garry Barbadillo", p: "N", bg: ["Incumbent councilmember and vice mayor, attorney; 2018 Milpitas Citizen of the Year.", "Ủy viên hội đồng đương nhiệm và phó thị trưởng, luật sư; Công dân Tiêu biểu của Milpitas năm 2018."], st: ["Fund police and emergency services; manage the budget without raising costs on families; represent Milpitas on Valley Water and clean energy boards.", "Cấp tiền cho cảnh sát và dịch vụ khẩn cấp; quản lý ngân sách mà không tăng chi phí cho các gia đình; đại diện Milpitas trong hội đồng Valley Water và hội đồng năng lượng sạch."] },
+  { n: "Bill Chuan", p: "N", bg: ["Engineer and small business owner; former planning commission chair (2019-2024); Army veteran.", "Kỹ sư và chủ doanh nghiệp nhỏ; cựu chủ tịch ủy ban quy hoạch (2019-2024); cựu quân nhân Lục quân."], st: ["Public safety first; responsible affordable housing; infrastructure spending and careful budgeting.", "An toàn công cộng trên hết; nhà ở vừa túi tiền một cách có trách nhiệm; đầu tư hạ tầng và chi tiêu cẩn thận."] },
+  { n: "Dipak Awasthi", p: "N", bg: ["Milpitas planning commissioner, retired small business owner (ran a market for 10+ years), 30-year resident. Endorsed by Mayor Montano and councilmembers Chua and Lam.", "Ủy viên ủy ban quy hoạch Milpitas, từng làm chủ một chợ hơn 10 năm (đã nghỉ hưu), sống ở Milpitas 30 năm. Được Thị trưởng Montano và hai ủy viên hội đồng Chua và Lam ủng hộ."], st: ["Clean streets, parks, and safer neighborhoods; faster permits; affordable housing and humane help for homeless residents.", "Đường phố sạch, công viên, khu phố an toàn hơn; cấp giấy phép nhanh hơn; nhà ở vừa túi tiền và giúp người vô gia cư một cách nhân đạo."] },
+  { n: "Seema Kanani", p: "N", bg: ["Licensed clinical social worker at Kaiser for 19 years; SEIU-UHW union leader and California Democratic Party officer.", "Nhân viên công tác xã hội lâm sàng có giấy phép, làm ở Kaiser 19 năm; lãnh đạo nghiệp đoàn SEIU-UHW và cán bộ Đảng Dân Chủ California."], st: ["Housing people can afford for seniors, workers, and families; public safety with enough staff and better street lighting; listen to residents and end council infighting.", "Nhà ở vừa túi tiền cho người cao niên, người lao động và các gia đình; an toàn công cộng với đủ nhân sự và đèn đường tốt hơn; lắng nghe cư dân và chấm dứt lục đục trong hội đồng."] },
+  { n: "Jennie Ha Phan", p: "N", bg: ["Community volunteer; no ballot statement filed. Appears to be the same Jennie Ha Phan who ran as a Republican in the June CA-17 primary (retired accountant), not confirmed.", "Tình nguyện viên cộng đồng; không nộp bản tuyên bố ứng cử. Có thể là cùng một người Jennie Ha Phan đã tranh cử với tư cách Cộng Hòa ở vòng sơ bộ Khu vực 17 hồi tháng 6 (kế toán viên đã nghỉ hưu), nhưng chưa xác nhận."] }
+  ] }
+];
+
+const PROPS = [
+{ n: "1", title: ["Housing bond", "Trái phiếu nhà ở"], out: ["Lean Yes", "Hơi nghiêng về Có"], tag: "Lean",
+  why: ["PPIC (Sept 4-10): 55% yes, 43% no.", "PPIC (4-10/9): 55% Có, 43% Không."],
+  does: ["Lets the state borrow $11.25 billion by selling bonds to pay for affordable housing. The money goes to rental housing, veteran housing ($1.25 billion), help for first-time buyers, farmworker housing, and tribal housing. Paying it back would cost the state about $500 million to $600 million a year for about 25 years.", "Cho phép tiểu bang vay 11,25 tỷ đô bằng cách bán trái phiếu để làm nhà ở giá phải chăng. Tiền dùng cho nhà cho thuê, nhà cho cựu chiến binh (1,25 tỷ đô), hỗ trợ người mua nhà lần đầu, nhà cho công nhân nông trại, và nhà cho người bản địa. Tiểu bang sẽ tốn khoảng 500 đến 600 triệu đô mỗi năm trong khoảng 25 năm để trả nợ."],
+  yes: ["The state can borrow $11.25 billion for these housing programs.", "Tiểu bang được vay 11,25 tỷ đô cho các chương trình nhà ở này."],
+  no: ["The state does not borrow this money for these housing programs.", "Tiểu bang không vay số tiền này cho các chương trình nhà ở này."],
+  sup: ["Gov. Gavin Newsom, California Democratic Party, California Apartment Association, California Labor Federation (AFL-CIO)", "Thống đốc Gavin Newsom, Đảng Dân Chủ California, California Apartment Association, Liên đoàn Lao động California (AFL-CIO)"],
+  opp: ["Some Republican state lawmakers", "Một số nhà lập pháp tiểu bang thuộc Đảng Cộng Hòa"],
+  src: CM + "proposition-1-housing-bond/" },
+{ n: "2", title: ["Rainy day fund", "Quỹ dự phòng"], out: ["Likely Yes", "Nhiều khả năng Có"], tag: "Likely",
+  why: ["PPIC (Sept 4-10): 60% yes, 39% no, with little organized opposition.", "PPIC (4-10/9): 60% Có, 39% Không, gần như không có phe phản đối có tổ chức."],
+  does: ["Raises the cap on how much the state can put in its rainy day savings fund, from 10% to 20% of general fund tax money. It also lets the state use tax money to pay down its roughly $20 billion federal unemployment insurance debt. Money put into savings would not count toward the state's yearly spending limit.", "Nâng mức trần của quỹ tiết kiệm dự phòng của tiểu bang từ 10% lên 20% tiền thuế của quỹ chung. Cũng cho phép tiểu bang dùng tiền thuế để trả khoản nợ bảo hiểm thất nghiệp liên bang khoảng 20 tỷ đô. Tiền bỏ vào quỹ tiết kiệm sẽ không tính vào mức trần chi tiêu hằng năm của tiểu bang."],
+  yes: ["The state can save more in good years, up to 20% of general fund taxes.", "Tiểu bang được để dành nhiều hơn vào những năm dư dả, đến 20% tiền thuế quỹ chung."],
+  no: ["The savings cap stays at 10% and current spending limit and refund rules stay the same.", "Mức trần tiết kiệm giữ ở 10%, các quy định về giới hạn chi tiêu và hoàn tiền giữ nguyên."],
+  sup: ["Gov. Gavin Newsom, legislative Democrats, California Democratic Party", "Thống đốc Gavin Newsom, các nhà lập pháp Dân Chủ, Đảng Dân Chủ California"],
+  opp: ["Reform California, legislative Republicans", "Reform California, các nhà lập pháp Cộng Hòa"],
+  src: CM + "proposition-2-rainy-day-fund/" },
+{ n: "3", key: true, title: ["High-income tax", "Thuế thu nhập cao"], out: ["Likely Yes", "Nhiều khả năng Có"], tag: "Likely",
+  why: ["PPIC (Sept 4-10): 58% yes, 40% no; Berkeley IGS (Sept 15-20): 54% yes, 34% no.", "PPIC (4-10/9): 58% Có, 40% Không; Berkeley IGS (15-20/9): 54% Có, 34% Không."],
+  does: ["Makes permanent the extra income tax on people earning more than about $371,000 a year (adjusted for inflation), which first passed in 2012 and is set to end in 2031. Most of the money goes to K-12 schools and community colleges, with any extra going to health care. It brings in about $5 billion to $15 billion a year.", "Giữ vĩnh viễn mức thuế thu nhập cao hơn cho người có thu nhập trên khoảng 371.000 đô một năm (điều chỉnh theo lạm phát). Thuế này được thông qua lần đầu năm 2012 và sẽ hết hạn năm 2031. Phần lớn tiền dành cho các trường từ mẫu giáo đến lớp 12 và đại học cộng đồng, phần dư dành cho y tế. Thu về khoảng 5 đến 15 tỷ đô mỗi năm."],
+  yes: ["The higher tax rates on top earners stay in place permanently.", "Mức thuế cao hơn cho người thu nhập cao được giữ vĩnh viễn."],
+  no: ["The higher tax rates end in 2031 as currently planned.", "Mức thuế cao hơn kết thúc năm 2031 như đã định."],
+  sup: ["California Teachers Association, California School Employees Association, California Medical Association, California Democratic Party", "Hiệp hội Giáo viên California, Hiệp hội Nhân viên Trường học California, Hiệp hội Y khoa California, Đảng Dân Chủ California"],
+  opp: ["California Taxpayers Association, Reform California", "California Taxpayers Association, Reform California"],
+  src: CM + "proposition-3-high-income-tax/" },
+{ n: "4", title: ["Public campaign financing", "Dùng tiền công quỹ cho tranh cử"], out: ["Lean No", "Hơi nghiêng về Không"], tag: "Lean",
+  why: ["PPIC (Sept 4-10): 42% yes, 53% no; Berkeley IGS (Sept 15-20): 35% yes, 35% no, 30% undecided.", "PPIC (4-10/9): 42% Có, 53% Không; Berkeley IGS (15-20/9): 35% Có, 35% Không, 30% chưa quyết định."],
+  does: ["Removes a 1988 state ban on using public money to fund political campaigns. State and local governments could then set up voluntary programs that give public money to candidates. Only a few charter cities, like San Francisco and Berkeley, can do this now.", "Bỏ lệnh cấm từ năm 1988 về việc dùng tiền công quỹ để tài trợ tranh cử. Khi đó chính quyền tiểu bang và địa phương có thể lập chương trình tự nguyện cấp tiền công quỹ cho ứng cử viên. Hiện chỉ vài thành phố có hiến chương riêng, như San Francisco và Berkeley, được làm vậy."],
+  yes: ["State and local governments are allowed to create public funding programs for candidates.", "Chính quyền tiểu bang và địa phương được phép lập chương trình cấp tiền công quỹ cho ứng cử viên."],
+  no: ["The ban on public funding of campaigns stays in place.", "Lệnh cấm dùng tiền công quỹ cho tranh cử vẫn giữ nguyên."],
+  sup: ["California Common Cause, California Clean Money Campaign, League of Women Voters, California Democratic Party", "California Common Cause, California Clean Money Campaign, Liên đoàn Cử tri Nữ (League of Women Voters), Đảng Dân Chủ California"],
+  opp: ["California Taxpayers Association, Reform California", "California Taxpayers Association, Reform California"],
+  src: CM + "proposition-4-public-fundraising/" },
+{ n: "5", title: ["Recall reform", "Thay đổi cách bãi nhiệm"], out: ["Likely No", "Nhiều khả năng Không"], tag: "Likely",
+  why: ["PPIC (Sept 4-10): 35% yes, 59% no, and it falls short of a majority in every party group.", "PPIC (4-10/9): 35% Có, 59% Không, và không đạt quá nửa trong bất kỳ nhóm đảng phái nào."],
+  does: ["Changes how recalls of statewide officials work. Voters would no longer pick a replacement on the same ballot as the recall question; instead a separate election would be held later to fill the seat. If a governor is recalled, the lieutenant governor would serve until the new election, and the recalled official could run again in it.", "Thay đổi cách bãi nhiệm (recall) các quan chức cấp tiểu bang. Cử tri sẽ không còn chọn người thay thế ngay trên lá phiếu bãi nhiệm. Thay vào đó, sẽ có một cuộc bầu riêng sau đó để lấp ghế. Nếu thống đốc bị bãi nhiệm, phó thống đốc sẽ tạm giữ chức đến cuộc bầu mới, và người bị bãi nhiệm được ra tranh cử lại."],
+  yes: ["The replacement is picked in a separate later election, not on the recall ballot.", "Người thay thế được chọn trong một cuộc bầu riêng sau đó, không phải trên lá phiếu bãi nhiệm."],
+  no: ["Voters keep picking a replacement on the same ballot as the recall question.", "Cử tri vẫn chọn người thay thế ngay trên cùng lá phiếu bãi nhiệm."],
+  sup: ["California Democratic Party, League of Women Voters, California Common Cause", "Đảng Dân Chủ California, Liên đoàn Cử tri Nữ, California Common Cause"],
+  opp: ["California Republican Party, Election Integrity Project California, Reform California", "Đảng Cộng Hòa California, Election Integrity Project California, Reform California"],
+  src: CM + "proposition-5-recall-reform/" },
+{ n: "37", title: ["Homebuyer loans", "Khoản vay cho người mua nhà"], out: ["Likely Yes", "Nhiều khả năng Có"], tag: "Likely",
+  why: ["PPIC (Sept 4-10): 61% yes, 35% no.", "PPIC (4-10/9): 61% Có, 35% Không."],
+  does: ["Lets the California Housing Finance Agency borrow up to $25 billion to offer fixed-rate second loans covering up to 17% of the price of a newly built home (under about $1.5 million). Combined with a regular mortgage, buyers could put as little as 3% down. Buyers must be California residents who live in the home and earn up to twice their area's median income.", "Cho phép Cơ quan Tài chính Nhà ở California vay đến 25 tỷ đô để cho người mua nhà mới xây vay thêm một khoản thứ hai lãi suất cố định, đến 17% giá nhà (nhà dưới khoảng 1,5 triệu đô). Cộng với khoản vay mua nhà thông thường, người mua có thể chỉ cần trả trước 3%. Người mua phải là cư dân California, sống trong căn nhà đó, và có thu nhập không quá gấp đôi mức trung bình của vùng."],
+  yes: ["The state creates this $25 billion loan program for middle-income buyers of new homes.", "Tiểu bang lập chương trình cho vay 25 tỷ đô này cho người thu nhập trung bình mua nhà mới."],
+  no: ["The loan program is not created.", "Chương trình cho vay này không được lập."],
+  sup: ["California Democratic Party, Xavier Becerra, California Association of Realtors, California Conference of Carpenters", "Đảng Dân Chủ California, Xavier Becerra, Hiệp hội Môi giới Bất động sản California, California Conference of Carpenters"],
+  opp: ["Reform California, League of Women Voters", "Reform California, Liên đoàn Cử tri Nữ"],
+  src: CM + "proposition-37-homebuyers-loan/" },
+{ n: "38", title: ["Immunology research bond", "Trái phiếu nghiên cứu miễn dịch học"], out: ["Lean Yes", "Hơi nghiêng về Có"], tag: "Lean",
+  why: ["PPIC (Sept 4-10): 55% yes, 42% no.", "PPIC (4-10/9): 55% Có, 42% Không."],
+  does: ["Lets the state borrow $8.4 billion for research on immunology and immune-based treatments for diseases like cancer, heart disease, and Alzheimer's. Half goes to a nonprofit research institute tied to the University of California, and half goes to grants for public universities and nonprofits. Drugs that come from the research must be sold to Californians at a 20% discount, and 10% of drug revenue goes back to the state.", "Cho phép tiểu bang vay 8,4 tỷ đô để nghiên cứu về miễn dịch học và cách chữa bệnh dựa trên hệ miễn dịch cho các bệnh như ung thư, bệnh tim và Alzheimer. Một nửa dành cho một viện nghiên cứu bất vụ lợi gắn với Đại học California, nửa còn lại cấp cho các trường đại học công và tổ chức bất vụ lợi. Thuốc làm ra từ nghiên cứu phải bán cho người California rẻ hơn 20%, và 10% doanh thu từ thuốc được trả lại cho tiểu bang."],
+  yes: ["The state borrows $8.4 billion for this medical research program.", "Tiểu bang vay 8,4 tỷ đô cho chương trình nghiên cứu y khoa này."],
+  no: ["The state does not borrow this money for the research program.", "Tiểu bang không vay số tiền này cho chương trình nghiên cứu."],
+  sup: ["Michelson Center for Public Policy (Gary Michelson), American Association of Immunologists, City of Hope, California Democratic Party", "Michelson Center for Public Policy (Gary Michelson), Hiệp hội Miễn dịch học Hoa Kỳ, City of Hope, Đảng Dân Chủ California"],
+  opp: ["League of Women Voters, Orange County Register editorial board, Stanford scholar Robert Kaplan, No on 38 campaign (California Health Policy Strategies)", "Liên đoàn Cử tri Nữ, ban biên tập báo Orange County Register, học giả Robert Kaplan của Stanford, nhóm vận động No on 38 (California Health Policy Strategies)"],
+  src: CM + "proposition-38-research-bond/" },
+{ n: "39", key: true, title: ["Voter ID", "Thẻ căn cước khi đi bầu"], out: ["Lean No", "Hơi nghiêng về Không"], tag: "Lean",
+  why: ["PPIC (Sept 4-10): 43% yes, 55% no; Berkeley IGS (Sept 15-20): 39% yes, 52% no; SurveyUSA (Sept 15-20) is the outlier at 48% yes, 38% no.", "PPIC (4-10/9): 43% Có, 55% Không; Berkeley IGS (15-20/9): 39% Có, 52% Không; riêng SurveyUSA (15-20/9) cho kết quả ngược lại: 48% Có, 38% Không."],
+  does: ["Changes the state constitution to require voters to show a government-issued ID at the polls. People voting by mail would have to write the last four digits of a government ID number. Election officials would also have to check that registered voters are U.S. citizens.", "Sửa hiến pháp tiểu bang để buộc cử tri xuất trình thẻ căn cước do chính phủ cấp khi đi bầu trực tiếp. Người bầu qua thư phải ghi 4 số cuối của một mã số căn cước do chính phủ cấp. Nhân viên bầu cử cũng phải kiểm tra cử tri đã ghi danh có phải là công dân Mỹ hay không."],
+  yes: ["Voters must show ID at the polls and give ID digits on mail ballots, and officials must check citizenship.", "Cử tri phải xuất trình thẻ căn cước khi bầu trực tiếp và ghi số căn cước trên lá phiếu gửi thư; nhân viên bầu cử phải kiểm tra quốc tịch."],
+  no: ["Voters keep showing ID only when they register, not each time they vote.", "Cử tri vẫn chỉ cần xuất trình giấy tờ khi ghi danh, không phải mỗi lần đi bầu."],
+  sup: ["California Republican Party, Reform California, Uline CEO Richard Uihlein", "Đảng Cộng Hòa California, Reform California, Richard Uihlein (CEO công ty Uline)"],
+  opp: ["ACLU, California Common Cause, League of Women Voters, California Democratic Party", "ACLU, California Common Cause, Liên đoàn Cử tri Nữ, Đảng Dân Chủ California"],
+  src: CM + "proposition-39-voter-id/" },
+{ n: "40", key: true, title: ["Billionaire tax", "Thuế tỷ phú"], out: ["Toss-up, leaning toward failing", "Khó đoán, nghiêng về thất bại"], tag: "Toss",
+  why: ["Polls are close (PPIC 52-46 yes; Berkeley IGS 45-42 yes; Politico/Citrin 45-43 among likely voters, all Sept), support has slipped since summer, and it is cancelled anyway if Prop 41 or 42 passes with more yes votes.", "Các thăm dò rất sát nhau (PPIC 52-46 Có; Berkeley IGS 45-42 Có; Politico/Citrin 45-43 trong số người nhiều khả năng đi bầu, tất cả vào tháng 9). Mức ủng hộ đã giảm từ mùa hè. Và dự luật này sẽ bị hủy nếu Dự luật 41 hoặc 42 thông qua với nhiều phiếu Có hơn."],
+  does: ["Puts a one-time 5% tax on the net worth of about 200 Californians worth more than $1 billion. Supporters expect about $100 billion over five years, mostly for health care, plus food aid and education. If Prop 41 or Prop 42 passes with more votes, this measure is cancelled.", "Đánh thuế một lần 5% trên tổng tài sản của khoảng 200 người California có tài sản trên 1 tỷ đô. Phe ủng hộ dự tính thu khoảng 100 tỷ đô trong 5 năm, chủ yếu cho y tế, cùng với trợ cấp thực phẩm và giáo dục. Nếu Dự luật 41 hoặc 42 thông qua với nhiều phiếu hơn, dự luật này bị hủy."],
+  yes: ["Billionaires pay a one-time 5% tax on their wealth, and the money goes mainly to health care.", "Các tỷ phú đóng thuế một lần 5% trên tài sản, và tiền chủ yếu dành cho y tế."],
+  no: ["The billionaire tax does not happen.", "Không có thuế tỷ phú."],
+  sup: ["SEIU-United Healthcare Workers West, Sen. Bernie Sanders, Teamsters California, AFSCME California, California Democratic Party", "SEIU-United Healthcare Workers West, Thượng nghị sĩ Bernie Sanders, Teamsters California, AFSCME California, Đảng Dân Chủ California"],
+  opp: ["California Business Roundtable, California Medical Association, California Teachers Association, Planned Parenthood, California Professional Firefighters, State Building and Construction Trades, Chris Larsen, Ron Conway", "California Business Roundtable, Hiệp hội Y khoa California, Hiệp hội Giáo viên California, Planned Parenthood, Hiệp hội Lính cứu hỏa Chuyên nghiệp California, State Building and Construction Trades, Chris Larsen, Ron Conway"],
+  src: CM + "proposition-40-billionaire-tax/" },
+{ n: "41", title: ["Audits for new special taxes", "Kiểm toán trước khi có thuế đặc biệt mới"], out: ["Toss-up", "Khó đoán"], tag: "Toss",
+  why: ["PPIC (Sept 4-10): 51% yes, 44% no; Berkeley IGS (Sept 15-20) had it ahead but short of a majority with many undecided.", "PPIC (4-10/9): 51% Có, 44% Không; Berkeley IGS (15-20/9) cho thấy đang dẫn nhưng chưa quá nửa, nhiều người chưa quyết định."],
+  does: ["Makes new special taxes harder to pass. The state auditor would have to review any special tax proposal before it goes to voters, including whether the program getting the money could cut its spending by 10% a year. New special taxes would count toward the state spending limit, which could trigger refunds, and if it gets more votes than Prop 40, Prop 40 is cancelled.", "Làm cho thuế đặc biệt mới khó thông qua hơn. Kiểm toán viên tiểu bang phải xem xét mọi đề xuất thuế đặc biệt trước khi đưa ra cử tri, kể cả việc chương trình nhận tiền có thể tự cắt 10% chi tiêu mỗi năm hay không. Thuế đặc biệt mới sẽ tính vào mức trần chi tiêu của tiểu bang, có thể dẫn đến hoàn tiền. Nếu dự luật này được nhiều phiếu hơn Dự luật 40, Dự luật 40 bị hủy."],
+  yes: ["New special taxes need an audit first and count toward the state spending limit, and Prop 40 is cancelled if this gets more votes.", "Thuế đặc biệt mới phải được kiểm toán trước và tính vào mức trần chi tiêu; Dự luật 40 bị hủy nếu dự luật này được nhiều phiếu hơn."],
+  no: ["Current rules for new special taxes stay the same.", "Các quy định hiện nay về thuế đặc biệt mới giữ nguyên."],
+  sup: ["Reform California, Google co-founder Sergey Brin, Wonderful Company CEO Stewart Resnick", "Reform California, Sergey Brin (đồng sáng lập Google), Stewart Resnick (CEO Wonderful Company)"],
+  opp: ["SEIU-United Healthcare Workers West, California Democratic Party", "SEIU-United Healthcare Workers West, Đảng Dân Chủ California"],
+  src: CM + "proposition-41-tax-audits/" },
+{ n: "42", key: true, title: ["Ban on personal property taxes", "Cấm thuế trên tài sản cá nhân"], out: ["Lean Yes", "Hơi nghiêng về Có"], tag: "Lean",
+  why: ["PPIC (Sept 4-10): 54% yes, 43% no, the highest of the three wealth tax measures; Berkeley IGS (Sept 15-20) had it ahead but short of a majority with many undecided.", "PPIC (4-10/9): 54% Có, 43% Không, cao nhất trong ba dự luật về thuế tài sản; Berkeley IGS (15-20/9) cho thấy đang dẫn nhưng chưa quá nửa, nhiều người chưa quyết định."],
+  does: ["Bans any new state tax on owning personal property (things other than real estate, like investment accounts, business stakes, or art). It also bans taxes that reach back to past activity, and it cancels conflicting taxes passed after January 1, 2026. If it gets more votes than Prop 40, the billionaire tax is cancelled.", "Cấm mọi loại thuế tiểu bang mới đánh vào việc sở hữu tài sản cá nhân (những thứ không phải nhà đất, như tài khoản đầu tư, cổ phần doanh nghiệp, hay tác phẩm nghệ thuật). Cũng cấm các loại thuế áp ngược về hoạt động trong quá khứ, và hủy các loại thuế mâu thuẫn được thông qua sau ngày 1/1/2026. Nếu dự luật này được nhiều phiếu hơn Dự luật 40, thuế tỷ phú bị hủy."],
+  yes: ["The state cannot create new wealth-style taxes on personal property, and Prop 40 is cancelled if this gets more votes.", "Tiểu bang không được tạo thuế mới kiểu thuế tài sản trên tài sản cá nhân; Dự luật 40 bị hủy nếu dự luật này được nhiều phiếu hơn."],
+  no: ["The state could still create taxes like the billionaire tax.", "Tiểu bang vẫn có thể tạo các loại thuế như thuế tỷ phú."],
+  sup: ["Reform California, Building a Better California, Sergey Brin, Peace Officers Research Association of California, California Professional Firefighters, State Building and Construction Trades Council of California", "Reform California, Building a Better California, Sergey Brin, Peace Officers Research Association of California, Hiệp hội Lính cứu hỏa Chuyên nghiệp California, State Building and Construction Trades Council of California"],
+  opp: ["SEIU-United Healthcare Workers West, California Democratic Party", "SEIU-United Healthcare Workers West, Đảng Dân Chủ California"],
+  src: CM + "proposition-42-property-taxes/" },
+{ n: "43", title: ["Two-thirds vote for local special taxes", "Cần 2/3 số phiếu cho thuế đặc biệt địa phương"], out: ["Lean No", "Hơi nghiêng về Không"], tag: "Lean",
+  why: ["PPIC (Sept 4-10): 43% yes, 51% no; Berkeley IGS (Sept 15-20): 31% yes, 40% no, 29% undecided.", "PPIC (4-10/9): 43% Có, 51% Không; Berkeley IGS (15-20/9): 31% Có, 40% Không, 29% chưa quyết định."],
+  does: ["Raises the vote needed to pass local special taxes put on the ballot by citizens, from a simple majority to two-thirds, starting January 1, 2027. Special taxes put on the ballot by local governments already need two-thirds.", "Nâng số phiếu cần để thông qua thuế đặc biệt địa phương do người dân đưa ra lá phiếu, từ quá nửa lên 2/3, bắt đầu từ ngày 1/1/2027. Thuế đặc biệt do chính quyền địa phương đưa ra vốn đã cần 2/3."],
+  yes: ["Citizen-led local special taxes need a two-thirds vote to pass.", "Thuế đặc biệt địa phương do người dân đề xuất cần 2/3 số phiếu mới được thông qua."],
+  no: ["Citizen-led local special taxes can still pass with a simple majority.", "Thuế đặc biệt địa phương do người dân đề xuất vẫn chỉ cần quá nửa số phiếu."],
+  sup: ["Howard Jarvis Taxpayers Association, Reform California", "Howard Jarvis Taxpayers Association, Reform California"],
+  opp: ["California Democratic Party, SEIU Local 1000", "Đảng Dân Chủ California, SEIU Local 1000"],
+  src: CM + "proposition-43-tax-threshold/" },
+{ n: "44", title: ["Clinic spending rules", "Quy định chi tiêu của phòng khám"], out: ["Likely No", "Nhiều khả năng Không"], tag: "Likely",
+  why: ["PPIC (Sept 4-10): 34% yes, 61% no, with doctors, clinics, and Planned Parenthood opposed.", "PPIC (4-10/9): 34% Có, 61% Không; bác sĩ, phòng khám và Planned Parenthood đều phản đối."],
+  does: ["Requires nonprofit community health clinics that serve low-income patients to spend at least 90% of their yearly revenue on program services such as patient care. The state attorney general would publish rules on what counts, and clinics that fall short would face penalties. The state would pay about tens of millions of dollars a year to run it.", "Buộc các phòng khám cộng đồng bất vụ lợi phục vụ bệnh nhân thu nhập thấp phải chi ít nhất 90% doanh thu hằng năm cho các dịch vụ chính, như chăm sóc bệnh nhân. Tổng chưởng lý tiểu bang sẽ ra quy định về những gì được tính, và phòng khám không đạt sẽ bị phạt. Tiểu bang sẽ tốn khoảng vài chục triệu đô mỗi năm để thực hiện."],
+  yes: ["Community clinics must spend at least 90% of revenue on patient care and related services or face fines.", "Phòng khám cộng đồng phải chi ít nhất 90% doanh thu cho chăm sóc bệnh nhân và dịch vụ liên quan, nếu không sẽ bị phạt."],
+  no: ["Clinic spending rules stay the same.", "Quy định chi tiêu của phòng khám giữ nguyên."],
+  sup: ["SEIU-United Healthcare Workers West", "SEIU-United Healthcare Workers West"],
+  opp: ["California Primary Care Association, California Medical Association, Planned Parenthood Affiliates of California, California Hospital Association, California Democratic Party", "California Primary Care Association, Hiệp hội Y khoa California, Planned Parenthood Affiliates of California, Hiệp hội Bệnh viện California, Đảng Dân Chủ California"],
+  src: CM + "proposition-44-clinic-funding/" },
+{ n: "45", key: true, title: ["Faster environmental review", "Xét duyệt môi trường nhanh hơn"], out: ["Toss-up", "Khó đoán"], tag: "Toss",
+  why: ["PPIC (Sept 4-10): 49% yes, 46% no, with labor and environmental groups opposed and business groups in favor.", "PPIC (4-10/9): 49% Có, 46% Không; giới lao động và các nhóm môi trường phản đối, giới doanh nghiệp ủng hộ."],
+  does: ["Changes the California Environmental Quality Act (CEQA) to speed up reviews for projects it calls essential, like housing, infrastructure, schools, broadband, and wildfire prevention. Reviews would have a 365-day deadline, and courts would have 270 days to rule on lawsuits about them.", "Sửa Luật Chất lượng Môi trường California (CEQA) để xét duyệt nhanh hơn các dự án được coi là thiết yếu, như nhà ở, hạ tầng, trường học, internet tốc độ cao và phòng chống cháy rừng. Việc xét duyệt phải xong trong 365 ngày, và tòa án có 270 ngày để xử các vụ kiện liên quan."],
+  yes: ["These projects get faster environmental reviews and faster court decisions.", "Các dự án này được xét duyệt môi trường nhanh hơn và tòa xử nhanh hơn."],
+  no: ["Current environmental review rules and timelines stay the same.", "Các quy định và thời hạn xét duyệt môi trường hiện nay giữ nguyên."],
+  sup: ["California Chamber of Commerce, California Building Industry Association, California Hospital Association, California Hispanic Chambers of Commerce, California Republican Party", "Phòng Thương mại California, California Building Industry Association, Hiệp hội Bệnh viện California, California Hispanic Chambers of Commerce, Đảng Cộng Hòa California"],
+  opp: ["California Labor Federation, California Nurses Association, Sierra Club California, League of Women Voters, California Democratic Party", "Liên đoàn Lao động California, Hiệp hội Y tá California, Sierra Club California, Liên đoàn Cử tri Nữ, Đảng Dân Chủ California"],
+  src: CM + "proposition-45-environmental-review/" }
+];
+
+const LOCAL = [
+{ n: "K", id: "mK", key: true, title: ["Measure K: Milpitas Local Funding Measure (business tax update)", "Dự luật K: Thuế doanh nghiệp Milpitas (Milpitas Local Funding Measure)"], out: ["Lean Yes", "Hơi nghiêng về Có"], tag: "Lean",
+  why: ["No poll found; it needs only a simple majority, the council put it on unanimously, police and firefighter unions back it, opposition is limited to a taxpayers group and a Libertarian leader, and Milpitas voters passed the Measure J sales tax by a wide margin in 2024.", "Không có thăm dò. Chỉ cần quá nửa số phiếu. Hội đồng thành phố đồng lòng đưa ra, nghiệp đoàn cảnh sát và lính cứu hỏa ủng hộ, phe phản đối chỉ có một nhóm người đóng thuế và một lãnh đạo Đảng Tự Do. Năm 2024 cử tri Milpitas đã thông qua thuế bán hàng Dự luật J với cách biệt lớn."],
+  does: ["Replaces Milpitas's 1976 business tax (based on industry and number of employees) with one based on gross receipts, starting January 1, 2028. Every business pays a flat fee from $25 (under $25,000 in receipts) to $400 (over $250,000), rising with inflation. Businesses over $700,000 also pay $0.25 to $0.35 per $1,000 of receipts (0.025% to 0.035%). Nonprofits are exempt. Expected to raise about $3 million a year for the general fund, which the city says would go to ambulance and emergency medical services, water and sewer lines, storm drains, street and sidewalk cleaning, illegal dumping and blight, and homelessness. Does not tax residents who are not business owners. Placed on the ballot by a unanimous City Council. Needs a simple majority.", "Thay thuế doanh nghiệp năm 1976 của Milpitas (tính theo ngành nghề và số nhân viên) bằng thuế tính theo tổng doanh thu, bắt đầu từ ngày 1/1/2028. Mọi doanh nghiệp đóng một mức phí cố định từ 25 đô (doanh thu dưới 25.000 đô) đến 400 đô (doanh thu trên 250.000 đô), tăng theo lạm phát. Doanh nghiệp có doanh thu trên 700.000 đô đóng thêm 0,25 đến 0,35 đô cho mỗi 1.000 đô doanh thu (0,025% đến 0,035%). Tổ chức bất vụ lợi được miễn. Dự kiến thu khoảng 3 triệu đô mỗi năm cho quỹ chung. Thành phố nói tiền sẽ dùng cho xe cứu thương và cấp cứu, đường ống nước và cống, cống thoát nước mưa, quét dọn đường phố và vỉa hè, xử lý đổ rác trái phép và khu xuống cấp, và vấn đề vô gia cư. Không đánh thuế cư dân không làm chủ doanh nghiệp. Toàn bộ Hội đồng Thành phố đồng ý đưa ra lá phiếu. Cần quá nửa số phiếu."],
+  yes: ["The new gross receipts business tax replaces the old per-employee tax; small businesses pay less, larger ones pay more.", "Thuế mới tính theo tổng doanh thu thay thế thuế cũ tính theo số nhân viên; doanh nghiệp nhỏ đóng ít hơn, doanh nghiệp lớn đóng nhiều hơn."],
+  no: ["The existing 1976 per-employee business tax stays as is.", "Thuế doanh nghiệp năm 1976 tính theo số nhân viên vẫn giữ nguyên."],
+  sup: ["Unanimous Milpitas City Council; Milpitas firefighters union (IAFF Local 1699) president and Milpitas Police Officers Association president; several small business owners signed the ballot argument.", "Toàn bộ Hội đồng Thành phố Milpitas; chủ tịch nghiệp đoàn lính cứu hỏa Milpitas (IAFF Local 1699) và chủ tịch Hiệp hội Cảnh sát Milpitas; một số chủ doanh nghiệp nhỏ ký tên vào lập luận ủng hộ trên lá phiếu."],
+  opp: ["Silicon Valley Taxpayers Association (Elizabeth C. Brierly) and Joe Dehn, chair of the Libertarian Party of Santa Clara County. They argue businesses pass taxes on to customers and workers and may leave Milpitas.", "Silicon Valley Taxpayers Association (Elizabeth C. Brierly) và Joe Dehn, chủ tịch Đảng Tự Do (Libertarian) Quận Santa Clara. Họ cho rằng doanh nghiệp sẽ đẩy thuế sang khách hàng và nhân viên, và có thể rời khỏi Milpitas."],
+  src: "https://www.milpitas.gov/1447/Measure-K-Milpitas-Local-Funding-Measure" },
+{ n: "RTM", id: "mRTM", key: true, title: ["Measure RTM: Connect Bay Area Transit Initiative", "Dự luật RTM: Giao thông Công cộng Vùng Vịnh (Connect Bay Area)"], out: ["Lean Yes", "Hơi nghiêng về Có"], tag: "Lean",
+  why: ["An EMC Research poll released by backers (Aug 2026) found 54% support across the five counties, and it needs only a simple majority counted region-wide; a pending lawsuit over the ballot wording is the main risk.", "Một thăm dò của EMC Research do phe ủng hộ công bố (8/2026) cho thấy 54% ủng hộ ở cả năm quận, và chỉ cần quá nửa số phiếu tính chung toàn vùng. Rủi ro chính là một vụ kiện đang chờ xử về cách viết trên lá phiếu."],
+  does: ["Regional measure in Alameda, Contra Costa, San Mateo, Santa Clara, and San Francisco. Adds a 0.5% sales tax in Santa Clara County (1% in San Francisco) for 14 years, April 2027 to April 2041, raising about $980 million a year to keep BART, Caltrain, VTA, and other transit running. About $290 million a year would come from Santa Clara County, mostly to VTA plus about $30 million to Caltrain. Needs a simple majority across all five counties combined.", "Dự luật cấp vùng ở các quận Alameda, Contra Costa, San Mateo, Santa Clara và San Francisco. Thêm 0,5% thuế bán hàng ở Quận Santa Clara (1% ở San Francisco) trong 14 năm, từ tháng 4/2027 đến tháng 4/2041, thu khoảng 980 triệu đô mỗi năm để duy trì BART, Caltrain, VTA và các hệ thống giao thông khác. Khoảng 290 triệu đô mỗi năm đến từ Quận Santa Clara, phần lớn cho VTA, cộng khoảng 30 triệu đô cho Caltrain. Cần quá nửa số phiếu tính chung cả năm quận."],
+  yes: ["The sales tax goes up by half a cent in Milpitas for 14 years to fund transit operations.", "Thuế bán hàng ở Milpitas tăng nửa xu (0,5%) trong 14 năm để trả chi phí vận hành giao thông công cộng."],
+  no: ["No new sales tax; BART and other agencies say they would cut service, close stations, or drop weekend trains.", "Không có thuế bán hàng mới; BART và các cơ quan khác nói sẽ cắt giảm dịch vụ, đóng trạm, hoặc bỏ chuyến cuối tuần."],
+  sup: ["Connect Bay Area campaign, Metropolitan Transportation Commission, BART, Caltrain, VTA, AC Transit, Muni, and transit advocacy groups such as Seamless Bay Area and TransForm.", "Nhóm vận động Connect Bay Area, Metropolitan Transportation Commission, BART, Caltrain, VTA, AC Transit, Muni, và các nhóm ủng hộ giao thông công cộng như Seamless Bay Area và TransForm."],
+  opp: ["Committee for Affordable Bay Area Transit (co-petitioner Gregg Dieguez, attorney Jason Bezis), which sued calling the ballot wording misleading and says agencies should cut overtime and use existing funds.", "Committee for Affordable Bay Area Transit (người cùng đứng đơn Gregg Dieguez, luật sư Jason Bezis). Nhóm này đã kiện, cho rằng cách viết trên lá phiếu gây hiểu lầm, và nói các cơ quan nên cắt tiền làm thêm giờ và dùng nguồn tiền sẵn có."],
+  src: "https://www.kqed.org/news/12095616/bay-area-group-files-lawsuit-against-transit-funding-measure-says-its-deceptive" }
+];
+
+let lang = "vi", size = 19;
+try { lang = localStorage.getItem("lang") || "vi"; size = +localStorage.getItem("size") || 19; } catch (e) {}
+const t = x => typeof x === "string" ? x : x[lang === "vi" ? 1 : 0];
+const star = o => o.key ? `<div class="star">${t(UI.star)}</div>` : "";
+const guess = o => `<p class="guess">${t(UI.guess)}<b>${t(o.out)}</b>${t(o.out) === t(TAG[o.tag]) ? "" : ` (${t(TAG[o.tag])})`}</p>
+  <details><summary>${t(UI.why)}</summary><p>${t(o.why)}</p></details>`;
+const party = c => t(PARTY[c.p]) + (c.reg ? t(REG[c.reg]) : "");
+
+function race(r) {
+  return `<article class="item" id="${r.id}">${star(r)}<div class="lvl">${t(r.lvl)}</div><h3>${t(r.office)}</h3>
+  <p class="does"><span class="k">${t(UI.does)}</span>${t(r.does)}</p>${guess(r)}
+  ${r.c.map(c => `<div class="cand ${c.reg || c.p}"><div><span class="nm">${c.n}</span><span class="pty ${c.reg || c.p}">${party(c)}</span></div>
+    <p><span class="k">${t(UI.bg)}</span>${t(c.bg)}</p><p><span class="k">${t(UI.st)}</span>${c.st ? t(c.st) : t(UI.nf)}</p></div>`).join("")}
+  <p><a href="${r.src}" target="_blank" rel="noopener">${t(UI.src)}</a></p></article>`;
+}
+
+function measure(m, local) {
+  const id = m.id || "p" + m.n;
+  return `<article class="item prop" id="${id}"><div class="num" aria-hidden="true">${m.n}</div><div>${star(m)}
+  <h3>${local ? t(m.title) : t(UI.prop) + " " + m.n + ": " + t(m.title)}</h3>
+  <p class="does"><span class="k">${t(UI.whatDoes)}</span>${t(m.does)}</p>
+  <div class="yn"><p class="y"><b class="y">${t(UI.yes)}</b>${t(UI.means)}${t(m.yes)}</p><p class="n"><b class="n">${t(UI.no)}</b>${t(UI.means)}${t(m.no)}</p></div>
+  ${guess(m)}
+  <details><summary>${t(UI.who)}</summary><p><span class="k">${t(UI.sup)}</span>${t(m.sup)}</p><p><span class="k">${t(UI.opp)}</span>${t(m.opp)}</p></details>
+  <p><a href="${m.src}" target="_blank" rel="noopener">${t(UI.src)}</a></p></div></article>`;
+}
+
+const dl = rows => `<dl class="howto">${rows.map(([k, v]) => `<dt>${t(k)}</dt><dd>${t(v)}</dd>`).join("")}</dl>`;
+
+function render() {
+  document.documentElement.lang = lang;
+  document.title = lang === "vi" ? "Lá phiếu Milpitas 2026" : "Milpitas Ballot 2026";
+  document.getElementById("vi").setAttribute("aria-pressed", lang === "vi");
+  document.getElementById("en").setAttribute("aria-pressed", lang === "en");
+  document.documentElement.style.fontSize = size + "px";
+  document.getElementById("app").innerHTML = `
+  <h1>${t(UI.title)}</h1><p class="sub">${t(UI.date)}</p>
+  <p class="note">${t(UI.notOfficial)}</p>
+  <nav aria-label="${t(UI.contents)}"><b>${t(UI.contents)}</b><ol>
+    <li><a href="#top10">${t(UI.top10)}</a></li><li><a href="#how">${t(UI.how)}</a></li>
+    <li><a href="#races">${t(UI.races)}</a></li><li><a href="#props">${t(UI.props)}</a></li>
+    <li><a href="#local">${t(UI.local)}</a></li><li><a href="#notes">${t(UI.notes)}</a></li></ol></nav>
+  <section id="top10"><h2>${t(UI.top10)}</h2><p class="lead">${t(UI.top10lead)}</p>
+    <ol>${TOP.map(([id, n, d]) => `<li><a href="#${id}"><b>${t(n)}</b></a>. ${t(d)}</li>`).join("")}</ol></section>
+  <section id="how"><h2>${t(UI.how)}</h2>${dl(HOW)}</section>
+  <section id="races"><h2>${t(UI.races)}</h2><p class="lead">${t(UI.racesLead)}</p>${RACES.map(race).join("")}</section>
+  <section id="props"><h2>${t(UI.props)}</h2><p class="lead">${t(UI.propsLead)}</p>${PROPS.map(m => measure(m)).join("")}</section>
+  <section id="local"><h2>${t(UI.local)}</h2><p class="lead">${t(UI.localLead)}</p>${LOCAL.map(m => measure(m, true)).join("")}</section>
+  <section id="notes"><h2>${t(UI.notes)}</h2>${dl(NOTES)}</section>
+  <footer>${t(UI.foot)}</footer>`;
+}
+
+function save() { try { localStorage.setItem("lang", lang); localStorage.setItem("size", size); } catch (e) {} }
+document.getElementById("vi").onclick = () => { lang = "vi"; save(); render(); };
+document.getElementById("en").onclick = () => { lang = "en"; save(); render(); };
+document.getElementById("up").onclick = () => { size = Math.min(size + 2, 27); save(); render(); };
+document.getElementById("dn").onclick = () => { size = Math.max(size - 2, 15); save(); render(); };
+render();
+</script>
+</body>
+</html>
