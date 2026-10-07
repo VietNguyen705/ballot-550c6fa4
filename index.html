@@ -34,39 +34,51 @@ a { color: var(--accent); }
 main { max-width: 720px; margin: 0 auto; padding: 8px 16px 64px; }
 h1 { font-size: 2rem; margin: 24px 0 4px; }
 .sub { color: var(--soft); margin: 0 0 16px; }
-nav ol { padding-left: 1.4em; }
-nav li { margin: 6px 0; }
-h2 { font-size: 1.6rem; margin: 56px 0 8px; padding-top: 12px; border-top: 3px solid var(--ink); }
-h3 { font-size: 1.3rem; margin: 0 0 4px; }
-section > p.lead { color: var(--soft); margin-top: 0; }
-.item { border-top: 1px solid var(--rule); padding: 28px 0 8px; scroll-margin-top: 72px; }
-.star { display: inline-block; background: var(--mark); color: var(--ink); font-size: 0.8rem; font-weight: 700; padding: 1px 8px; margin-bottom: 6px; }
-.lvl { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--soft); font-weight: 600; }
+.glance { margin: 20px 0 8px; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+.glance li { border-bottom: 1px solid var(--rule); }
+.glance a { display: flex; align-items: baseline; gap: 14px; padding: 12px 0; text-decoration: none; color: var(--ink); }
+.glance .big { font-family: "Noto Serif", Georgia, serif; font-size: 2rem; font-weight: 700; color: var(--accent); min-width: 2.2ch; text-align: right; line-height: 1; }
+.glance .lb { font-weight: 600; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 4px; }
+.hint { color: var(--soft); font-size: 0.95rem; }
+h2 { font-size: 1.5rem; margin: 48px 0 4px; padding-top: 12px; border-top: 3px solid var(--ink); scroll-margin-top: 64px; }
+h2 .ct { color: var(--soft); font-weight: 600; }
+section > p.lead { color: var(--soft); margin: 0 0 12px; font-size: 0.95rem; }
+.row { border-top: 1px solid var(--rule); margin: 0; }
+.row:last-of-type { border-bottom: 1px solid var(--rule); }
+.row > summary { list-style: none; display: grid; grid-template-columns: 2.2rem 1fr 1.2rem; gap: 10px; align-items: start; padding: 14px 0; cursor: pointer; color: var(--ink); font-weight: 400; min-height: 56px; }
+.row > summary::-webkit-details-marker { display: none; }
+.row .n { font-family: "Noto Serif", Georgia, serif; font-weight: 700; color: var(--accent); font-size: 1.1rem; text-align: right; }
+.row .tt { font-weight: 700; display: block; line-height: 1.35; }
+.row .s2 { display: block; color: var(--soft); font-size: 0.9rem; line-height: 1.45; margin-top: 2px; }
+.row .chev { color: var(--accent); font-weight: 700; transition: transform .15s; }
+.row[open] > summary .chev { transform: rotate(90deg); }
+.row[open] > summary { padding-bottom: 6px; }
+.body { padding: 0 0 18px calc(2.2rem + 10px); }
+.star { color: #8a6d00; font-size: 0.85rem; }
+.imp { background: var(--mark); padding: 6px 10px; margin: 4px 0 12px; }
 .does { margin: 4px 0 10px; }
-.guess { font-size: 0.95rem; color: var(--soft); }
+.guess { font-size: 0.95rem; color: var(--soft); margin: 10px 0 0; }
 .guess b { color: var(--ink); }
-details { margin: 8px 0; }
-summary { cursor: pointer; color: var(--accent); font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+.body details { margin: 4px 0; }
+.body summary, .extra > summary { cursor: pointer; color: var(--accent); font-weight: 600; min-height: 44px; display: flex; align-items: center; }
 details p { margin: 4px 0 12px; }
-.cand { border-left: 3px solid var(--rule); padding: 2px 0 2px 14px; margin: 18px 0; }
-.cand .nm { font-size: 1.15rem; font-weight: 700; }
+.cand { border-left: 3px solid var(--rule); padding: 2px 0 2px 12px; margin: 14px 0; }
+.cand .nm { font-size: 1.1rem; font-weight: 700; }
 .pty { font-size: 0.85rem; font-weight: 600; margin-left: 6px; }
 .pty.D { color: var(--dem); } .pty.R { color: var(--rep); } .pty.N { color: var(--soft); }
 .cand.D { border-left-color: var(--dem); } .cand.R { border-left-color: var(--rep); }
-.cand p { margin: 4px 0; }
+.cand p { margin: 4px 0; font-size: 0.95rem; }
 .k { font-weight: 600; }
-.prop { display: grid; grid-template-columns: 3.2rem 1fr; column-gap: 12px; }
-.num { font-family: "Noto Serif", Georgia, serif; font-size: 2.2rem; font-weight: 700; line-height: 1; color: var(--accent); padding-top: 4px; }
-.yn { margin: 12px 0; }
 .yn p { margin: 6px 0; padding-left: 12px; border-left: 4px solid; }
-.yn .y { border-color: var(--yes); } .yn .n { border-color: var(--no); }
-.yn b.y { color: var(--yes); } .yn b.n { color: var(--no); }
-.grid2 { display: grid; gap: 4px 0; }
+.yn .y { border-color: var(--yes); } .yn .n2 { border-color: var(--no); }
+.yn b.y { color: var(--yes); } .yn b.n2 { color: var(--no); }
+.extra { border-top: 1px solid var(--rule); margin-top: 32px; }
 .howto dt { font-weight: 700; margin-top: 12px; }
 .howto dd { margin: 2px 0 0; }
-footer { color: var(--soft); font-size: 0.85rem; margin-top: 48px; border-top: 1px solid var(--rule); padding-top: 12px; }
-@media (max-width: 480px) { .prop { grid-template-columns: 1fr; } .num { font-size: 1.8rem; margin-bottom: 6px; } h1 { font-size: 1.7rem; } }
-@media print { .bar { display: none; } h2 { break-before: page; } }
+footer { color: var(--soft); font-size: 0.85rem; margin-top: 40px; border-top: 1px solid var(--rule); padding-top: 12px; }
+@media (max-width: 480px) { .body { padding-left: 0; } h1 { font-size: 1.7rem; } }
+@media (prefers-color-scheme: dark) { .star { color: #e8c54a; } }
+@media print { .bar { display: none; } .body { padding-left: 0; } }
 </style>
 </head>
 <body>
@@ -83,9 +95,9 @@ footer { color: var(--soft); font-size: 0.85rem; margin-top: 48px; border-top: 1
 const UI = {
   title: ["Milpitas Ballot Guide", "Hướng dẫn lá phiếu Milpitas"],
   date: ["General election, Tuesday, November 3, 2026. Researched September 29, 2026.", "Bầu cử tổng quát, Thứ Ba, ngày 3 tháng 11 năm 2026. Thông tin cập nhật ngày 29/9/2026."],
-  contents: ["On this page", "Trong trang này"],
-  top10: ["The 10 most important votes", "10 lá phiếu quan trọng nhất"],
-  top10lead: ["Marked with a yellow label below.", "Được đánh dấu bằng nhãn vàng ở bên dưới."],
+  glance: ["votes on your ballot", "mục cần bầu trên lá phiếu"],
+  hint: ["★ marks the 10 most important votes. Tap any vote to open it.", "★ là 10 mục quan trọng nhất. Bấm vào từng mục để mở ra xem."],
+  imp: ["Why it matters: ", "Vì sao quan trọng: "],
   how: ["How it works", "Cách bầu cử"],
   races: ["Candidate races", "Bầu ứng cử viên"],
   racesLead: ["15 races: US House, 9 statewide offices, State Senate, State Assembly, school board, mayor, city council.", "15 cuộc bầu: Hạ viện Hoa Kỳ, 9 chức vụ toàn tiểu bang, Thượng viện và Hạ viện Tiểu bang, hội đồng học khu, thị trưởng, hội đồng thành phố."],
@@ -94,13 +106,12 @@ const UI = {
   local: ["Local measures", "Dự luật địa phương"],
   localLead: ["Only voters in Milpitas (Measure K) or the five-county Bay Area region (Measure RTM) vote on these.", "Chỉ cử tri ở Milpitas (Dự luật K) hoặc ở năm quận vùng Vịnh (Dự luật RTM) mới bầu các dự luật này."],
   notes: ["Notes", "Ghi chú"],
-  star: ["★ Important vote", "★ Lá phiếu quan trọng"],
   does: ["What the office does: ", "Chức vụ này làm gì: "],
   guess: ["Likely outcome (a guess, not a result): ", "Dự đoán (chỉ là dự đoán, không phải kết quả): "],
   why: ["Why this guess?", "Vì sao dự đoán như vậy?"],
   bg: ["Background: ", "Lý lịch: "],
   st: ["Stands for: ", "Lập trường: "],
-  whatDoes: ["What it does: ", "Dự luật này làm gì: "],
+  whatDoes: ["What does it do?", "Dự luật này làm gì?"],
   yes: ["YES", "CÓ"], no: ["NO", "KHÔNG"], means: [" means: ", " nghĩa là: "],
   who: ["Who supports and opposes it", "Ai ủng hộ, ai phản đối"],
   sup: ["Supports: ", "Ủng hộ: "], opp: ["Opposes: ", "Phản đối: "],
@@ -425,50 +436,52 @@ const LOCAL = [
 let lang = "vi", size = 19;
 try { lang = localStorage.getItem("lang") || "vi"; size = +localStorage.getItem("size") || 19; } catch (e) {}
 const t = x => typeof x === "string" ? x : x[lang === "vi" ? 1 : 0];
-const star = o => o.key ? `<div class="star">${t(UI.star)}</div>` : "";
+const IMP = Object.fromEntries(TOP.map(([id, , d]) => [id, d]));
+const imp = id => IMP[id] ? `<p class="imp"><span class="k">★ ${t(UI.imp)}</span>${t(IMP[id])}</p>` : "";
 const guess = o => `<p class="guess">${t(UI.guess)}<b>${t(o.out)}</b>${t(o.out) === t(TAG[o.tag]) ? "" : ` (${t(TAG[o.tag])})`}</p>
   <details><summary>${t(UI.why)}</summary><p>${t(o.why)}</p></details>`;
 const party = c => t(PARTY[c.p]) + (c.reg ? t(REG[c.reg]) : "");
+const src = u => `<p><a href="${u}" target="_blank" rel="noopener">${t(UI.src)}</a></p>`;
+let num = 0;
+const row = (id, title, sub, body) => `<details class="row" id="${id}"><summary><span class="n">${++num}</span>
+  <span><span class="tt">${IMP[id] ? '<span class="star">★</span> ' : ""}${title}</span>${sub ? `<span class="s2">${sub}</span>` : ""}</span>
+  <span class="chev" aria-hidden="true">›</span></summary><div class="body">${body}</div></details>`;
 
-function race(r) {
-  return `<article class="item" id="${r.id}">${star(r)}<div class="lvl">${t(r.lvl)}</div><h3>${t(r.office)}</h3>
-  <p class="does"><span class="k">${t(UI.does)}</span>${t(r.does)}</p>${guess(r)}
+const race = r => row(r.id, t(r.office), r.c.map(c => c.n).join(" · "), `${imp(r.id)}
+  <p class="does"><span class="k">${t(UI.does)}</span>${t(r.does)}</p>
   ${r.c.map(c => `<div class="cand ${c.reg || c.p}"><div><span class="nm">${c.n}</span><span class="pty ${c.reg || c.p}">${party(c)}</span></div>
     <p><span class="k">${t(UI.bg)}</span>${t(c.bg)}</p><p><span class="k">${t(UI.st)}</span>${c.st ? t(c.st) : t(UI.nf)}</p></div>`).join("")}
-  <p><a href="${r.src}" target="_blank" rel="noopener">${t(UI.src)}</a></p></article>`;
-}
+  ${guess(r)}${src(r.src)}`);
 
-function measure(m, local) {
-  const id = m.id || "p" + m.n;
-  return `<article class="item prop" id="${id}"><div class="num" aria-hidden="true">${m.n}</div><div>${star(m)}
-  <h3>${local ? t(m.title) : t(UI.prop) + " " + m.n + ": " + t(m.title)}</h3>
-  <p class="does"><span class="k">${t(UI.whatDoes)}</span>${t(m.does)}</p>
-  <div class="yn"><p class="y"><b class="y">${t(UI.yes)}</b>${t(UI.means)}${t(m.yes)}</p><p class="n"><b class="n">${t(UI.no)}</b>${t(UI.means)}${t(m.no)}</p></div>
-  ${guess(m)}
+const measure = (m, local) => row(m.id || "p" + m.n, local ? t(m.title) : t(UI.prop) + " " + m.n, local ? "" : t(m.title), `${imp(m.id || "p" + m.n)}
+  <div class="yn"><p class="y"><b class="y">${t(UI.yes)}</b>${t(UI.means)}${t(m.yes)}</p><p class="n2"><b class="n2">${t(UI.no)}</b>${t(UI.means)}${t(m.no)}</p></div>
+  <details><summary>${t(UI.whatDoes)}</summary><p>${t(m.does)}</p></details>
   <details><summary>${t(UI.who)}</summary><p><span class="k">${t(UI.sup)}</span>${t(m.sup)}</p><p><span class="k">${t(UI.opp)}</span>${t(m.opp)}</p></details>
-  <p><a href="${m.src}" target="_blank" rel="noopener">${t(UI.src)}</a></p></div></article>`;
-}
+  ${guess(m)}${src(m.src)}`);
 
 const dl = rows => `<dl class="howto">${rows.map(([k, v]) => `<dt>${t(k)}</dt><dd>${t(v)}</dd>`).join("")}</dl>`;
 
 function render() {
+  num = 0;
   document.documentElement.lang = lang;
   document.title = lang === "vi" ? "Lá phiếu Milpitas 2026" : "Milpitas Ballot 2026";
   document.getElementById("vi").setAttribute("aria-pressed", lang === "vi");
   document.getElementById("en").setAttribute("aria-pressed", lang === "en");
   document.documentElement.style.fontSize = size + "px";
+  const total = RACES.length + PROPS.length + LOCAL.length;
   document.getElementById("app").innerHTML = `
-  <h1>${t(UI.title)}</h1><p class="sub">${t(UI.date)}</p>  <nav aria-label="${t(UI.contents)}"><b>${t(UI.contents)}</b><ol>
-    <li><a href="#top10">${t(UI.top10)}</a></li><li><a href="#how">${t(UI.how)}</a></li>
-    <li><a href="#races">${t(UI.races)}</a></li><li><a href="#props">${t(UI.props)}</a></li>
-    <li><a href="#local">${t(UI.local)}</a></li><li><a href="#notes">${t(UI.notes)}</a></li></ol></nav>
-  <section id="top10"><h2>${t(UI.top10)}</h2><p class="lead">${t(UI.top10lead)}</p>
-    <ol>${TOP.map(([id, n, d]) => `<li><a href="#${id}"><b>${t(n)}</b></a>. ${t(d)}</li>`).join("")}</ol></section>
-  <section id="how"><h2>${t(UI.how)}</h2>${dl(HOW)}</section>
-  <section id="races"><h2>${t(UI.races)}</h2><p class="lead">${t(UI.racesLead)}</p>${RACES.map(race).join("")}</section>
-  <section id="props"><h2>${t(UI.props)}</h2><p class="lead">${t(UI.propsLead)}</p>${PROPS.map(m => measure(m)).join("")}</section>
-  <section id="local"><h2>${t(UI.local)}</h2><p class="lead">${t(UI.localLead)}</p>${LOCAL.map(m => measure(m, true)).join("")}</section>
-  <section id="notes"><h2>${t(UI.notes)}</h2>${dl(NOTES)}</section>
+  <h1>${t(UI.title)}</h1><p class="sub">${t(UI.date)}</p>
+  <p><b>${total} ${t(UI.glance)}</b></p>
+  <ul class="glance">
+    <li><a href="#races"><span class="big">${RACES.length}</span><span class="lb">${t(UI.races)}</span></a></li>
+    <li><a href="#props"><span class="big">${PROPS.length}</span><span class="lb">${t(UI.props)}</span></a></li>
+    <li><a href="#local"><span class="big">${LOCAL.length}</span><span class="lb">${t(UI.local)}</span></a></li></ul>
+  <p class="hint">${t(UI.hint)}</p>
+  <section><h2 id="races">${t(UI.races)} <span class="ct">(${RACES.length})</span></h2><p class="lead">${t(UI.racesLead)}</p>${RACES.map(race).join("")}</section>
+  <section><h2 id="props">${t(UI.props)} <span class="ct">(${PROPS.length})</span></h2><p class="lead">${t(UI.propsLead)}</p>${PROPS.map(m => measure(m)).join("")}</section>
+  <section><h2 id="local">${t(UI.local)} <span class="ct">(${LOCAL.length})</span></h2><p class="lead">${t(UI.localLead)}</p>${LOCAL.map(m => measure(m, true)).join("")}</section>
+  <details class="extra"><summary>${t(UI.how)}</summary>${dl(HOW)}</details>
+  <details class="extra" style="margin-top:0"><summary>${t(UI.notes)}</summary>${dl(NOTES)}</details>
   <footer>${t(UI.foot)}</footer>`;
 }
 
